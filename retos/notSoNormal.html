@@ -6,6 +6,9 @@
     <title>Not So Normal | Retos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="notSoNormal.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 </head>
 <body>
     <!-- Navbar -->
@@ -50,7 +53,7 @@
                 <!-- Reglamento -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingReglamento">
-                        <button class="accordion-button bg-success text-white reglamento" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="true" aria-controls="collapseReglamento">
+                        <button class="accordion-button bg-success text-white reglamento" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false" aria-controls="collapseReglamento">
                             Reglamento
                         </button>
                     </h2>
@@ -68,6 +71,7 @@
                                     <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres mayor realismo te recomiendo
                                     que tus sims se independicen con el dinero que sus padres puedan darles, o con el dinero que hayan estado juntando con sus
                                     propias manos.</li>
+                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.</li>
                                 </ul> <br>
                                 <li><strong>Mods y CC:</strong> Súper permitidos, y recomendados.</li> <br>
                                 <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es el primero en nacer, pueden haber variaciones
@@ -99,7 +103,9 @@
                                 humanas "normales", hasta que tu destino cambia al cruzarte con... lo inesperado (ejem 👽).
                             </p>
 
-                            <ul><strong>Color:</strong> Verde ácido</ul>
+                            <ul><strong>Color:</strong> 
+                                <li>Verde ácido</li>
+                            </ul>
                             <ul><strong>DLC requeridos: </strong>
                                 <li>¡A trabajar!</li>
                             </ul>
@@ -108,32 +114,54 @@
                                 <li>Ambicioso</li>
                                 <li>Errático</li>
                             </ul>
-                            <ul><strong>Aspiración:</strong> Cerebrito</ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li>Científico</li>
+                            <ul><strong>Aspiración:</strong> 
+                                <li><input type="checkbox"> Cerebrito</li>
                             </ul>
-                            <ul><strong>Estudios:</strong> ...</ul>
+                            <ul><strong>Trabajo:</strong>
+                                <li><input type="checkbox"> Científico</li>
+                            </ul>
+                            <ul><strong>Estudios:</strong> 
+                                <li>Ninguno. Al ser la primera generación, empezarás como jóven adulto y sin habilidades, lo que te dejará poco tiempo 
+                                    para ir a la universidad y lograr algo significativo que te ayude en las ventajas de tu carrera.</li>
+                                </ul>
                             <ul><strong>Habilidades</strong>
-                                <li>Lógica</li>
+                                <li><input type="checkbox"> Destreza manual</li>
+                                <li><input type="checkbox"> Ciencia espacial</li>
                             </ul>
                             <ul><strong>Colecciones:</strong>
-                                <li>...</li>
+                                <li><input type="checkbox"> Elementos</li>
                             </ul>
                             <ul><strong>Estilos de vida:</strong>
-                                <li>...</li>
+                                <li>Ninguno</li>
                             </ul>
                             <ul><strong>Rasgos de recompensa:</strong>
-                                <li>...</li>
+                                <li><input type="checkbox"> Genio temporal: se obtiene por beber un suero de inteligencia</li>
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
-                                <li>...</li>
+                                <li><input type="checkbox"> Comienzas tu vida en una especie de búnker en StrangerVille u Oasis Springs, y a medida avanzas en tu 
+                                    carrera se convierte en una auténtica guarida científica</li>
+                                <li><input type="checkbox"> Crear todos los inventos del creador de inventos</li>
+                                <li><input type="checkbox"> Eres demasiado raro para todos, y solo hablas de alienígenas, así que no consigues pareja</li>
+                                <li><input type="checkbox"> Conoces un alienígena, e inmediatamente decides que lo harás tu cónyugue</li>
+                                <li><input type="checkbox"> Visitar Sixam con el electrogenerador de agujeros de gusano o el cohete</li>
+                                <li><input type="checkbox"> Tienes al menos un hijo con tu pareja alienígena</li>
                             </ul>
+
+                            <div class="gen-images d-flex flex-wrap gap-2">
+                                <a href="../img/mentauno.png" class="glightbox" data-gallery="gen1">
+                                    <img src="../img/mentauno.png" class="img-fluid rounded gen-thumb" alt="Generación 1">
+                                </a>
+                                <a href="../img/genunobunker.jpg" class="glightbox" data-gallery="gen1">
+                                    <img src="../img/genunobunker.jpg" class="img-fluid rounded gen-thumb" alt="Búnker">
+                                </a>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
 
-                <!-- Generación 2 -->
+                <!-- Generación 2 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingGen2">
                         <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false" aria-controls="collapseGen2">
@@ -172,6 +200,7 @@
                             <ul><strong>Objetivos de vida:</strong>
                                 <li>...</li>
                             </ul>
+                            -->
 
                         </div>
                     </div>
@@ -195,5 +224,17 @@
             console.log("Accordion de Not So Normal listo 🚀");
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox',  // selecciona todas las imágenes con esta clase
+        openEffect: 'fade',      // efecto de apertura suave
+        closeEffect: 'fade',     // efecto de cierre suave
+        overlay: true,           // activa overlay en el fondo
+        closeButton: true        // muestra la cruz para cerrar
+    });
+</script>
+
 </body>
 </html>
