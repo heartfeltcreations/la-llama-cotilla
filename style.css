@@ -1,34 +1,149 @@
 body {
-            background-color: #f9f9f9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-        .hero {
-            background: linear-gradient(135deg, #badc58, #6ab04c);
-            color: white;
-            padding: 5rem 1rem;
-            text-align: center;
-            border-radius: 0 0 20px 20px;
-        }
-        .card {
-            border-radius: 15px;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.03);
-        }
-        .comment-box {
-            background: #f1f1f1;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-        }
-        .footer {
-            background: #6ab04c;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            margin-top: 3rem;}
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Logo */
+.logo-llama {
+    width: 45px;
+}
+
+/* Usuario */
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.usuario-img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+/* Búsqueda */
+.search-container {
+    position: relative;
+}
+
+.searchBar {
+    border-radius: 50px;
+    width: 300px;
+    padding: 6px 35px 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.searchScan {
+    width: 22px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* ---- Menú ---- */
+.hero {
+    background: linear-gradient(to right, #1a6eff, #cc00ff, #ff60bd);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hero .nav-link {
+    display: inline-block;
+    color: white !important;
+    font-weight: 500;
+    padding: 6px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hero .nav-link.active {
+    background: white;
+    color: #cc00ff !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 84, 0.25);
+}
+
+/* ---- Columna izquierda ---- */
+.lateral-bar {
+    background: linear-gradient(135deg, #e0f7fa, #f3e5f5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lateral-bar img {
+    border-radius: 12px;
+}
+
+.texto-intro {
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+/* Botones izquierda */
+.btn-light {
+    background: linear-gradient(to right, #ecb1e5, #d687fe);
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #ad9cff, #5ba2ff);
+}
+
+/* ---- Retos ---- */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* ---- Noticia ---- */
+.noticia-img {
+    height: 160px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+}
+
+/* ---- Footer ---- */
+.footer {
+    background: linear-gradient(to right, #1a6eff, #cc00ff, #ff60bd);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
