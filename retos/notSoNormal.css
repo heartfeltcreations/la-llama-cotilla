@@ -52,6 +52,8 @@ margin-top: 1rem;
 }
 }
 
+
+
 .gen-images a {
     flex: 1 1 150px; /* ancho mínimo de 150px y se adapta al contenedor */
     display: block;
@@ -63,9 +65,6 @@ margin-top: 1rem;
     object-fit: cover; }/* recorta y centra la imagen si es necesario */
 
 .reglamento { background-color: #6ab04c !important; }
-.genOne { background-color: #BBDF32 !important; color: darkgreen !important; }
-.genTwo { background-color: #000080 !important; color: #90D5FF !important;}
-.genThree { background-color: fuchsia !important; color: #33001E !important;}
 
 p { font-size: 110%; }
 li { font-size: 110%; }
