@@ -1,70 +1,71 @@
-body {
-background-color: #f9f9f9;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.hero {
-background: linear-gradient(135deg, #badc58, #6ab04c);
-color: white;
-padding: 3rem 1rem;
-text-align: center;
-border-radius: 0 0 20px 20px;
-}
 .accordion-button:focus {
-box-shadow: none;
+    box-shadow: none;
 }
+
 .accordion-button {
-font-weight: 600;
+    font-weight: 600;
 }
+
 .accordion-body ul {
-list-style: none;
-padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 .accordion-body ul li {
-padding: 0.3rem 0;
+    padding: 0.3rem 0;
 }
+
 .accordion-body .gen-content {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 .accordion-body .gen-text {
-flex: 1;
-padding-right: 1rem;
-}
-.accordion-body .gen-image {
-flex-shrink: 0;
-max-width: 200px;
-}
-.footer {
-background: #6ab04c;
-color: white;
-padding: 1rem;
-text-align: center;
-margin-top: 3rem;
-}
-        @media (max-width: 768px) {
-.accordion-body .gen-content {
-flex-direction: column;
-}
-.accordion-body .gen-image {
-max-width: 100%;
-margin-top: 1rem;
-}
+    flex: 1;
+    padding-right: 1rem;
 }
 
+.accordion-body .gen-image {
+    flex-shrink: 0;
+    max-width: 200px;
+}
 
+@media (max-width: 768px) {
+    .accordion-body .gen-content {
+        flex-direction: column;
+    }
+
+    .accordion-body .gen-image {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
 
 .gen-images a {
-    flex: 1 1 150px; /* ancho mínimo de 150px y se adapta al contenedor */
+    flex: 1 1 150px;
+    /* ancho mínimo de 150px y se adapta al contenedor */
     display: block;
 }
 
 .gen-thumb {
-    width: 100%;     /* la imagen ocupa todo el ancho del link */
-    height: 120px;   /* altura uniforme */
-    object-fit: cover; }/* recorta y centra la imagen si es necesario */
+    width: 100%;
+    /* la imagen ocupa todo el ancho del link */
+    height: 120px;
+    /* altura uniforme */
+    object-fit: cover;
+}
 
-.reglamento { background-color: #6ab04c !important; }
+/* recorta y centra la imagen si es necesario */
 
-p { font-size: 110%; }
-li { font-size: 110%; }
+.reglamento {
+    background: linear-gradient(to bottom right, #1a6eff, #9900ff, #ff60f4)
+}
+
+p {
+    font-size: 110%;
+}
+
+li {
+    font-size: 110%;
+}

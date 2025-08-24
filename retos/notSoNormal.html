@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not So Normal | Retos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
     <link rel="stylesheet" href="challenges.css">
+    <link rel="stylesheet" href="../style.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
 </head>
+
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">🦙 La Llama Cotilla</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                </ul>
+    <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo y título -->
+            <div class="d-flex align-items-center gap-2">
+                <img src="../img/llama_2911380.png" alt="llama" class="logo-llama">
+                <a class="navbar-brand fw-bold" href="../index.html">La Llama Cotilla</a>
+            </div>
+
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input class="searchBar" type="search" placeholder="Buscar">
+                <span><img class="searchScan" src="../img/scan_6338489.png" alt="icono buscar"></span>
+            </div>
+
+            <!-- Usuario -->
+            <div class="usuario">
+                <img src="../img/user_11129870.png" alt="usuario" class="usuario-img">
+                <span>Usuario<br><small class="text-muted">Estado</small></span>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="hero">
-        <h1 class="display-4 fw-bold">Not So Normal</h1>
-        <p class="lead">Un reto de legado donde lo extraño es lo único constante.</p>
     </header>
+
+    <!-- Menu -->
+    <nav class="hero">
+        <a class="nav-link" href="../index.html">Inicio</a>
+        <a class="nav-link active" href="#">Retos</a>
+        <a class="nav-link" href="#">Galería</a>
+        <a class="nav-link" href="#">Comunidad</a>
+        <a class="nav-link" href="#">Contacto</a>
+    </nav>
 
     <!-- Intro -->
     <main class="container my-5">
         <section style="text-align: center;" class="mb-5">
+            <h1>Not So Normal</h1> <br>
             <p>¿Alguna vez pensaste en cómo la infancia marca a una persona para siempre?
-                En <strong>Not So Normal</strong>, cada generación de tu familia se forma según la niñez que vivió: los traumas, obsesiones, lujos o carencias
+                En <strong>Not So Normal</strong>, cada generación de tu familia se forma según la niñez que vivió: los
+                traumas, obsesiones, lujos o carencias
                 que tuvieron de pequeños se transforman en la base de su vida adulta.</p>
-            <p>Este reto está diseñado para aprovechar cada pack de Los Sims 4, dándole a cada generación un lore único, un color representativo 
+            <p>Este reto está diseñado para aprovechar cada pack de Los Sims 4, dándole a cada generación un lore único,
+                un color representativo
                 y objetivos concretos.</p>
-            <p>Tus sims no tendrán infancias comunes, ni destinos corrientes. Porque en este legado... ser normal jamás fue una posibilidad.</p>
+            <p>Tus sims no tendrán infancias comunes, ni destinos corrientes. Porque en este legado... ser normal jamás
+                fue una posibilidad.</p>
             <p>¿Listo para guiar a tus sims a través de una vida en la que lo único constante es lo extraño?
                 Bienvenida/o a <strong>Not So Normal</strong>.</p>
         </section>
 
         <!-- Accordion con Generaciones -->
         <section>
-            <h3 style="text-align: center;" class="mb-4">📖 Reglamento y Generaciones</h3>
+            <h3 style="text-align: center;" class="mb-4">Reglamento y Generaciones</h3>
             <div class="accordion" id="accordionGeneraciones">
 
                 <!-- Reglamento -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingReglamento">
-                        <button class="accordion-button bg-success text-white reglamento" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false" aria-controls="collapseReglamento">
+                        <button class="accordion-button bg-success text-white reglamento" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false"
+                            aria-controls="collapseReglamento">
                             Reglamento
                         </button>
                     </h2>
-                    <div id="collapseReglamento" class="accordion-collapse collapse" aria-labelledby="headingReglamento" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseReglamento" class="accordion-collapse collapse" aria-labelledby="headingReglamento"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>📌 Objetivo principal</h5> <br>
-                            <p>Completar un legado de varias generaciones donde cada sim heredero vive marcado por su infancia.</p> <br><hr><br>
+                            <p>Completar un legado de varias generaciones donde cada sim heredero vive marcado por su
+                                infancia.</p> <br>
+                            <hr><br>
                             <h5>📌 Reglas básicas</h5> <br>
                             <ul>
                                 <li><strong>Duración de vida:</strong> Normal.</li> <br>
                                 <li><strong>Trucos:</strong></li>
                                 <ul>
-                                    <li>☺︎ Se permiten trucos mínimos de dinero. En este aspecto, estaría bien que tus sims crezcan de manera
-                                        progresiva, en lugar de solo darles todo "en la mano". Es más realista y entretenido.</li>
-                                    <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres mayor realismo te recomiendo
-                                    que tus sims se independicen con el dinero que sus padres puedan darles, o con el dinero que hayan estado juntando con sus
-                                    propias manos.</li>
-                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.</li>
+                                    <li>☺︎ Se permiten trucos mínimos de dinero. En este aspecto, estaría bien que tus
+                                        sims crezcan de manera
+                                        progresiva, en lugar de solo darles todo "en la mano". Es más realista y
+                                        entretenido.</li>
+                                    <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres
+                                        mayor realismo te recomiendo
+                                        que tus sims se independicen con el dinero que sus padres puedan darles, o con
+                                        el dinero que hayan estado juntando con sus
+                                        propias manos.</li>
+                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.
+                                    </li>
                                 </ul> <br>
                                 <li><strong>Mods y CC:</strong> Súper permitidos, y recomendados.</li> <br>
-                                <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es el primero en nacer, pueden haber variaciones
-                                en alguna que otra generación. Tú decide con cuánto puedes jugar.</li> <br>
-                                <li><strong>Colores:</strong> Cada generación tiene un color de referencia que debe verse reflejado en el sim y/o en su entorno. 
-                                No necesariamente debes hacerlo abosultamente todo <span style="background-color: #720000; color: white;">ROJO PASIÓN</span>, pero sí debe estar bastante presente.</li>
-                            </ul> <br><hr><br>
+                                <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es
+                                    el primero en nacer, pueden haber variaciones
+                                    en alguna que otra generación. Tú decide con cuánto puedes jugar.</li> <br>
+                                <li><strong>Colores:</strong> Cada generación tiene un color de referencia que debe
+                                    verse reflejado en el sim y/o en su entorno.
+                                    No necesariamente debes hacerlo abosultamente todo <span
+                                        style="background-color: #720000; color: white;">ROJO PASIÓN</span>, pero sí
+                                    debe estar bastante presente.</li>
+                            </ul> <br>
+                            <hr><br>
                             <h5>📌 Finalizar una generación</h5> <br>
-                            <p>Para dar por finalizada una generación, el sim debería haber cumplido con todos los objetivos principales, completar su aspiración (al
+                            <p>Para dar por finalizada una generación, el sim debería haber cumplido con todos los
+                                objetivos principales, completar su aspiración (al
                                 menos llegar a la última etapa), y cumplir con los objetivos de vida.</p>
                         </div>
                     </div>
@@ -89,21 +125,29 @@
                 <!-- Generación 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen1">
-                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false" aria-controls="collapseGen1" style="background-color: #BBDF32 !important; color: darkgreen !important;">
+                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false"
+                            aria-controls="collapseGen1"
+                            style="background-color: #BBDF32 !important; color: darkgreen !important;">
                             Generación 1
                         </button>
                     </h2>
-                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                No vienes de una familia adinerada ni de un linaje importante. Siempre fuiste el "raro" del barrio, obsesionado con el espacio, los
-                                experimentos y lo que existe más allá de las estrellas. Te unes a la carrera científica en busca de reconocimiento, pero en el
-                                fondo lo que quieres es probar que no estamos solos en el universo. Tu obsesión con lo paranormal te lleva a descuidar las relaciones
-                                humanas "normales", hasta que tu destino cambia al cruzarte con... lo inesperado (ejem 👽).
+                                No vienes de una familia adinerada ni de un linaje importante. Siempre fuiste el "raro"
+                                del barrio, obsesionado con el espacio, los
+                                experimentos y lo que existe más allá de las estrellas. Te unes a la carrera científica
+                                en busca de reconocimiento, pero en el
+                                fondo lo que quieres es probar que no estamos solos en el universo. Tu obsesión con lo
+                                paranormal te lleva a descuidar las relaciones
+                                humanas "normales", hasta que tu destino cambia al cruzarte con... lo inesperado (ejem
+                                👽).
                             </p>
 
-                            <ul><strong>Color:</strong> 
+                            <ul><strong>Color:</strong>
                                 <li>Verde ácido</li>
                             </ul>
                             <ul><strong>DLC requeridos: </strong>
@@ -114,16 +158,18 @@
                                 <li>Ambicioso</li>
                                 <li>Errático</li>
                             </ul>
-                            <ul><strong>Aspiración:</strong> 
+                            <ul><strong>Aspiración:</strong>
                                 <li><input type="checkbox"> Cerebrito</li>
                             </ul>
                             <ul><strong>Trabajo:</strong>
                                 <li><input type="checkbox"> Científico</li>
                             </ul>
-                            <ul><strong>Estudios:</strong> 
-                                <li>Ninguno. Al ser la primera generación, empezarás como jóven adulto y sin habilidades, lo que te dejará poco tiempo 
-                                    para ir a la universidad y lograr algo significativo que te ayude en las ventajas de tu carrera.</li>
-                                </ul>
+                            <ul><strong>Estudios:</strong>
+                                <li>Ninguno. Al ser la primera generación, empezarás como jóven adulto y sin
+                                    habilidades, lo que te dejará poco tiempo
+                                    para ir a la universidad y lograr algo significativo que te ayude en las ventajas de
+                                    tu carrera.</li>
+                            </ul>
                             <ul><strong>Habilidades</strong>
                                 <li><input type="checkbox"> Destreza manual</li>
                                 <li><input type="checkbox"> Ciencia espacial</li>
@@ -135,21 +181,27 @@
                                 <li>Ninguno</li>
                             </ul>
                             <ul><strong>Rasgos de recompensa:</strong>
-                                <li><input type="checkbox"> Genio temporal: se obtiene por beber un suero de inteligencia</li>
+                                <li><input type="checkbox"> Genio temporal: se obtiene por beber un suero de
+                                    inteligencia</li>
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Comienzas tu vida en una especie de búnker en StrangerVille u Oasis Springs, y a medida avanzas en tu 
+                                <li><input type="checkbox"> Comienzas tu vida en una especie de búnker en StrangerVille
+                                    u Oasis Springs, y a medida avanzas en tu
                                     carrera se convierte en una auténtica guarida científica</li>
                                 <li><input type="checkbox"> Crear todos los inventos del creador de inventos</li>
-                                <li><input type="checkbox"> Eres demasiado raro para todos, y solo hablas de alienígenas, así que no consigues pareja</li>
-                                <li><input type="checkbox"> Conoces un alienígena, e inmediatamente decides que lo harás tu cónyugue</li>
-                                <li><input type="checkbox"> Visitar Sixam con el electrogenerador de agujeros de gusano o el cohete</li>
+                                <li><input type="checkbox"> Eres demasiado raro para todos, y solo hablas de
+                                    alienígenas, así que no consigues pareja</li>
+                                <li><input type="checkbox"> Conoces un alienígena, e inmediatamente decides que lo harás
+                                    tu cónyugue</li>
+                                <li><input type="checkbox"> Visitar Sixam con el electrogenerador de agujeros de gusano
+                                    o el cohete</li>
                                 <li><input type="checkbox"> Tienes al menos un hijo con tu pareja alienígena</li>
                             </ul>
 
                             <div class="gen-images d-flex flex-wrap gap-2">
                                 <a href="../img/mentauno.png" class="glightbox" data-gallery="gen1">
-                                    <img src="../img/mentauno.png" class="img-fluid rounded gen-thumb" alt="Generación 1">
+                                    <img src="../img/mentauno.png" class="img-fluid rounded gen-thumb"
+                                        alt="Generación 1">
                                 </a>
                                 <a href="../img/genunobunker.jpg" class="glightbox" data-gallery="gen1">
                                     <img src="../img/genunobunker.jpg" class="img-fluid rounded gen-thumb" alt="Búnker">
@@ -164,23 +216,30 @@
                 <!-- Generación 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen2">
-                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false" aria-controls="collapseGen2" style="background-color: #000080 !important; color: #90D5FF !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false"
+                            aria-controls="collapseGen2"
+                            style="background-color: #000080 !important; color: #90D5FF !important;">
                             Generación 2
                         </button>
                     </h2>
-                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Eres descendiente de un científico obsesivo y tienes sangre alienígena. Tu infancia estuvo marcada por el laboratorio, experimentos
-                                raros y un hogar donde se hablaba más de planetas que de cumpleaños. Esto te hizo crecer con un sentimiento de no encajar.
-                                Eres demasiado humano para los aliens, y demasiado alien para los humanos. De adulto, te obesionas con adaptarte y enconctrar un lugar
+                                Eres descendiente de un científico obsesivo y tienes sangre alienígena. Tu infancia
+                                estuvo marcada por el laboratorio, experimentos
+                                raros y un hogar donde se hablaba más de planetas que de cumpleaños. Esto te hizo crecer
+                                con un sentimiento de no encajar.
+                                Eres demasiado humano para los aliens, y demasiado alien para los humanos. De adulto, te
+                                obesionas con adaptarte y enconctrar un lugar
                                 en la sociedad, pero a tu manera.
                             </p>
 
                             <ul><strong>Color:</strong>
-                            <li>Azul marino</li>
-                        </ul>
+                                <li>Azul marino</li>
+                            </ul>
                             <ul><strong>DLC requeridos: </strong>
                                 <li>¡A trabajar!</li>
                                 <li>Días de universidad</li>
@@ -191,41 +250,48 @@
                                 <li>Extrovertido</li>
                             </ul>
                             <ul><strong>Aspiración:</strong>
-                            <li><input type="checkbox"> Amigo del mundo</li>
-                        </ul>
+                                <li><input type="checkbox"> Amigo del mundo</li>
+                            </ul>
                             <ul><strong>Trabajo:</strong>
                                 <li><input type="checkbox"> Médico</li>
                             </ul>
                             <ul><strong>Estudios:</strong>
                                 <li><input type="checkbox"> Biología</li>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Carisma</li>
-                            </ul>
-                            <ul><strong>Colecciones:</strong>
-                                <li><input type="checkbox"> Impresiones de microscopio</li>
-                            </ul>
-                            <ul><strong>Estilos de vida:</strong>
-                                <li>Sociable: para adquirir o mantener este estilo de vida, deberías tener cuatro amigos o más</li>
-                            </ul>
-                            <ul><strong>Rasgos de recompensa:</strong>
-                                <li><input type="checkbox"> Siempre bienvenido</li>
-                                <li><input type="checkbox"> Supersaludable: al alcanzar el nivel 8 de la profesión Médica</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Oculta tanto como puedas tu naturaleza alienígena</li>
-                                <li><input type="checkbox"> Ten un mejor amigo humano desde la niñez, será el único que sepa la verdad</li>
-                                <li><input type="checkbox"> Cásate con un sim humano</li>
-                                <li><input type="checkbox"> Ten hijos, hasta que logres tener un descendiente humano</li>
-                            </ul>
-                           
-                            <div class="gen-images d-flex flex-wrap gap-2">
-                                <a href="../img/aliens.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/aliens.png" class="img-fluid rounded gen-thumb" alt="Generación 2">
-                                </a>
-                                <a href="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg" class="img-fluid rounded gen-thumb" alt="Sixam">
-                                </a>
-                            </div>
+                                <ul><strong>Habilidades</strong>
+                                    <li><input type="checkbox"> Carisma</li>
+                                </ul>
+                                <ul><strong>Colecciones:</strong>
+                                    <li><input type="checkbox"> Impresiones de microscopio</li>
+                                </ul>
+                                <ul><strong>Estilos de vida:</strong>
+                                    <li>Sociable: para adquirir o mantener este estilo de vida, deberías tener cuatro
+                                        amigos o más</li>
+                                </ul>
+                                <ul><strong>Rasgos de recompensa:</strong>
+                                    <li><input type="checkbox"> Siempre bienvenido</li>
+                                    <li><input type="checkbox"> Supersaludable: al alcanzar el nivel 8 de la profesión
+                                        Médica</li>
+                                </ul>
+                                <ul><strong>Objetivos de vida:</strong>
+                                    <li><input type="checkbox"> Oculta tanto como puedas tu naturaleza alienígena</li>
+                                    <li><input type="checkbox"> Ten un mejor amigo humano desde la niñez, será el único
+                                        que sepa la verdad</li>
+                                    <li><input type="checkbox"> Cásate con un sim humano</li>
+                                    <li><input type="checkbox"> Ten hijos, hasta que logres tener un descendiente humano
+                                    </li>
+                                </ul>
+
+                                <div class="gen-images d-flex flex-wrap gap-2">
+                                    <a href="../img/aliens.png" class="glightbox" data-gallery="gen2">
+                                        <img src="../img/aliens.png" class="img-fluid rounded gen-thumb"
+                                            alt="Generación 2">
+                                    </a>
+                                    <a href="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg"
+                                        class="glightbox" data-gallery="gen2">
+                                        <img src="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg"
+                                            class="img-fluid rounded gen-thumb" alt="Sixam">
+                                    </a>
+                                </div>
 
                         </div>
                     </div>
@@ -233,20 +299,28 @@
 
                 <!-- gen 3 -->
 
-                                <div class="accordion-item">
+                <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen3">
-                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false" aria-controls="collapseGen3" style="background-color: fuchsia !important; color: #33001E !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false"
+                            aria-controls="collapseGen3"
+                            style="background-color: fuchsia !important; color: #33001E !important;">
                             Generación 3
                         </button>
                     </h2>
-                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Toda tu infancia estuvo marcada por la obsesión de tu familia con "parecer normales". Pero tu oidas las falsas apariencias. 
-                                Te prometiste a ti mismo que nunca ocultarías quien eras, y que jamás bajarías la voz por complacer a nadie.
-                                Cuando creciste, e mudaste a un pequeño apartamento de San Myshuno. Encunetras tu lugar en la noche: karaokes, festivales, murales
-                                y luces neón. Pronto descubres tu pasión por el arte, llevándote a la fama. Te conviertes en una figura pública escandalosa, llena de
+                                Toda tu infancia estuvo marcada por la obsesión de tu familia con "parecer normales".
+                                Pero tu oidas las falsas apariencias.
+                                Te prometiste a ti mismo que nunca ocultarías quien eras, y que jamás bajarías la voz
+                                por complacer a nadie.
+                                Cuando creciste, e mudaste a un pequeño apartamento de San Myshuno. Encunetras tu lugar
+                                en la noche: karaokes, festivales, murales
+                                y luces neón. Pronto descubres tu pasión por el arte, llevándote a la fama. Te
+                                conviertes en una figura pública escandalosa, llena de
                                 romances y espectáculos.
                             </p>
 
@@ -268,44 +342,47 @@
                             <ul><strong>Trabajo:</strong>
                                 <li><input type="checkbox"> Artista musical</li>
                             </ul>
-                            <ul><strong>Estudios:</strong> 
+                            <ul><strong>Estudios:</strong>
                                 <li>Ninguno</li>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Canto</li>
-                                <li><input type="checkbox"> Baile</li>
-                            </ul>
-                            <ul><strong>Colecciones:</strong>
-                                <li><input type="checkbox"> Pósters de la ciudad</li>
-                            </ul>
-                            <ul><strong>Estilos de vida:</strong>
-                                <li>Ninguno</li>
-                            </ul>
-                            <ul><strong>Rasgos de recompensa:</strong>
-                                <li><input type="checkbox"> Alma nocturna</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Mudate a la ciudad apenas seas joven adulto</li>
-                                <li><input type="checkbox"> Tener al menos tres relaciones fallidas</li>
-                                <li><input type="checkbox"> Participa siempre de los festivales locales</li>
-                                <li><input type="checkbox"> Llega al nievel de Fama Mundial</li>
-                                <li><input type="checkbox"> Como famoso, vive creando escándalos</li>
-                                <li><input type="checkbox"> Tener un hijo sin haber comenzado una relación formal</li>
-                            </ul>
-                           
-                            <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="../img/Urbanitas_1.PNG3.PNG.png" class="glightbox" data-gallery="gen3">
-                                    <img src="../img/Urbanitas_1.PNG3.PNG.png" class="img-fluid rounded gen-thumb" alt="Generación 3">
-                                </a>
-                                <a href="../img/maxresdefault.jpg" class="glightbox" data-gallery="gen3">
-                                    <img src="../img/maxresdefault.jpg" class="img-fluid rounded gen-thumb" alt="urbanitas">
-                                </a>
-                            </div>
+                                <ul><strong>Habilidades</strong>
+                                    <li><input type="checkbox"> Canto</li>
+                                    <li><input type="checkbox"> Baile</li>
+                                </ul>
+                                <ul><strong>Colecciones:</strong>
+                                    <li><input type="checkbox"> Pósters de la ciudad</li>
+                                </ul>
+                                <ul><strong>Estilos de vida:</strong>
+                                    <li>Ninguno</li>
+                                </ul>
+                                <ul><strong>Rasgos de recompensa:</strong>
+                                    <li><input type="checkbox"> Alma nocturna</li>
+                                </ul>
+                                <ul><strong>Objetivos de vida:</strong>
+                                    <li><input type="checkbox"> Mudate a la ciudad apenas seas joven adulto</li>
+                                    <li><input type="checkbox"> Tener al menos tres relaciones fallidas</li>
+                                    <li><input type="checkbox"> Participa siempre de los festivales locales</li>
+                                    <li><input type="checkbox"> Llega al nievel de Fama Mundial</li>
+                                    <li><input type="checkbox"> Como famoso, vive creando escándalos</li>
+                                    <li><input type="checkbox"> Tener un hijo sin haber comenzado una relación formal
+                                    </li>
+                                </ul>
+
+                                <div class="gen-images d-flex flex-wrap gap-3">
+                                    <a href="../img/Urbanitas_1.PNG3.PNG.png" class="glightbox" data-gallery="gen3">
+                                        <img src="../img/Urbanitas_1.PNG3.PNG.png" class="img-fluid rounded gen-thumb"
+                                            alt="Generación 3">
+                                    </a>
+                                    <a href="../img/maxresdefault.jpg" class="glightbox" data-gallery="gen3">
+                                        <img src="../img/maxresdefault.jpg" class="img-fluid rounded gen-thumb"
+                                            alt="urbanitas">
+                                    </a>
+                                </div>
 
                         </div>
                     </div>
                 </div>
 
-                                <!-- gen 4 
+                <!-- gen 4 
 
                                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen3">
@@ -372,7 +449,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 La Llama Cotilla | Hecho por Heartfelt Creations🦙</p>
+        <p>© 2025 La Llama Cotilla | Hecho por Heartfelt Creations</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -384,15 +461,16 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-    const lightbox = GLightbox({
-        selector: '.glightbox',  // selecciona todas las imágenes con esta clase
-        openEffect: 'fade',      // efecto de apertura suave
-        closeEffect: 'fade',     // efecto de cierre suave
-        overlay: true,           // activa overlay en el fondo
-        closeButton: true        // muestra la cruz para cerrar
-    });
-</script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',  // selecciona todas las imágenes con esta clase
+            openEffect: 'fade',      // efecto de apertura suave
+            closeEffect: 'fade',     // efecto de cierre suave
+            overlay: true,           // activa overlay en el fondo
+            closeButton: true        // muestra la cruz para cerrar
+        });
+    </script>
 
 </body>
+
 </html>

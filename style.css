@@ -1,6 +1,6 @@
 body {
     background-color: #f9f9f9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Istok Web', sans-serif;
     color: #333;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .searchBar {
     border-radius: 50px;
-    width: 300px;
+    width: 650px;
     padding: 6px 35px 6px 12px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -123,6 +123,7 @@ body {
     border-top-right-radius: 12px;
     max-height: 150px;
     object-fit: cover;
+    height: 150px;
 }
 
 /* ---- Noticia ---- */
@@ -130,6 +131,13 @@ body {
     height: 160px;
     border-radius: 12px;
     background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+}
+
+#details {
+    padding: 4%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px;
 }
 
 /* ---- Footer ---- */
