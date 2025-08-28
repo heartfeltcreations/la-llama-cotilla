@@ -51,7 +51,7 @@
 .gen-thumb {
     width: 100%;
     /* la imagen ocupa todo el ancho del link */
-    height: 120px;
+    height: 150px;
     /* altura uniforme */
     object-fit: cover;
 }
