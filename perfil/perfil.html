@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dev-modal" role="dialog" aria-modal="true">
+        <div class="dev-modal__content">
+            <h2>⚠️ Función en desarrollo</h2>
+            <p>Esta sección aún no está disponible.</p>
+            <a href="../index.html" class="dev-modal__back">⬅ Volver al inicio</a>
+        </div>
+    </div>
+
+    <style>
+        .dev-modal {
+            background-color: rgba(17, 24, 39, 0.92);
+        }
+
+        :root {
+            --dev-bg: rgba(17, 24, 39, 0.92);
+            --dev-text: #f8fafc;
+            --dev-shadow: 0 10px 25px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .2);
+        }
+
+        .dev-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, .6);
+            backdrop-filter: blur(4px);
+        }
+
+        .dev-modal__content {
+            background: var(--dev-bg);
+            color: var(--dev-text);
+            padding: 2rem 2.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: var(--dev-shadow);
+            animation: dev-pop .35s ease-out;
+        }
+
+        .dev-modal__content h2 {
+            margin: 0 0 1rem;
+            font: 600 1.4rem/1.3 system-ui, sans-serif;
+        }
+
+        .dev-modal__content p {
+            margin: 0 0 1.5rem;
+            font: 400 1rem/1.4 system-ui, sans-serif;
+        }
+
+        .dev-modal__back {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(to bottom right, #1749ff, #aa00ff, #ff16c9);
+            color: #fff;
+            font: 600 1rem/1.2 system-ui, sans-serif;
+            padding: .65rem 1.2rem;
+            border-radius: .75rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+            transition: transform .15s ease, background-color .15s ease;
+        }
+
+        .dev-modal__back:hover {
+            background: linear-gradient(to bottom right, #b8ffcd, #a6ffe1, #7efffb);
+            color: #333;
+        }
+
+        .dev-modal__back:active {
+            transform: scale(.96);
+        }
+
+        @keyframes dev-pop {
+            from {
+                transform: scale(.95);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+
+</html>
