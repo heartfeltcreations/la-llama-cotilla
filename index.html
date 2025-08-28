@@ -14,24 +14,32 @@
 <body>
   <!-- Navbar -->
   <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container-fluid">
+      <div class="row w-100 align-items-center">
+
       <!-- Logo y título -->
-      <div class="d-flex align-items-center gap-2">
+      <div class="col-6 col-md-3 d-flex align-items-center gap-2">
         <img src="img/llama_2911380.png" alt="llama" class="logo-llama">
         <a class="navbar-brand fw-bold" href="index.html">La Llama Cotilla</a>
       </div>
 
       <!-- Barra de búsqueda -->
-      <div class="search-container">
-        <input class="searchBar" type="search" placeholder="Buscar">
+       <div class="col-6 col-md-5 mt-2 mt-md-0">
+      <div class="search-container w-100">
+        <input class="searchBar w-100" type="search" placeholder="Buscar">
         <span><img class="searchScan" src="img/scan_6338489.png" alt="icono buscar"></span>
+      </div>
       </div> 
 
-      <!-- Usuario --><a href="perfil/perfil.html">
-      <div class="usuario">
+      <!-- Usuario -->
+      <div class="col-12 col-md-4 mt-3 mt-md-0 text-md-end">
+        <a href="perfil/perfil.html" class="d-inline-flex align-items-center gap-2 usuario">
         <img src="img/user_11129870.png" alt="usuario" class="usuario-img">
         <span>Usuario<br><small class="text-muted">Estado</small></span>
-      </div> </a>
+        </a>
+      </div>
+
+    </div>
     </div>
   </header>
 
@@ -46,9 +54,11 @@
 
   <!-- Contenido -->
   <main class="container my-5">
-    <div class="row">
+    <div class="row gy-4">
+
       <!-- Columna izquierda -->
-      <div class="col-md-4 lateral-bar">
+      <div class="col-12 col-md-4">
+        <div class="lateral-bar h-100">
         <img
           src="https://assetsio.gnwcdn.com/sims-4-cottage-living-harold-the-llama.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
           alt="Llama Cotilla" class="img-fluid rounded shadow">
@@ -65,10 +75,11 @@
             escalera</button>
           <button class="btn btn-light shadow-sm">Mis comentarios descarados, porque una llama nunca se calla</button>
         </div>
+        </div>
       </div>
 
       <!-- Columna derecha -->
-      <div class="col-md-8">
+      <div class="col-12 col-md-8">
         <!-- Retos destacados -->
         <div class="row g-3 mb-5">
           <div class="col-md-4">
