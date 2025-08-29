@@ -128,9 +128,9 @@ body {
 
 /* ---- Noticia ---- */
 .noticia-img {
-    height: 160px;
+    width: 100%;
     border-radius: 12px;
-    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+/*    background: linear-gradient(135deg, #f3e5f5, #e1bee7);*/
 }
 
 .details {
