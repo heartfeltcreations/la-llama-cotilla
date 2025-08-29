@@ -1,18 +1,49 @@
+/* Bloques de reglamento */
+.reglamento-block {
+    background-color: none;
+    color: #333;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reglamento-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Título de cada bloque */
+.reglamento-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Contenido de cada bloque */
+.reglamento-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.reglamento-content ul {
+    padding-left: 1.5rem;
+}
+
+.reglamento-content ul li {
+    margin-bottom: 0.4rem;
+}
+
 .accordion-button:focus {
     box-shadow: none;
 }
 
 .accordion-button {
     font-weight: 600;
-}
-
-.accordion-body ul {
-    list-style: none;
-    padding: 0;
-}
-
-.accordion-body ul li {
-    padding: 0.3rem 0;
 }
 
 .accordion-body .gen-content {
@@ -31,6 +62,25 @@
     max-width: 200px;
 }
 
+.accordion-body {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.accordion-button.genOne {
+    background: linear-gradient(to bottom right, #edffa4, #abff8a);
+    color: darkgreen;
+}
+.accordion-button.genTwo {
+    background: linear-gradient(to bottom right, #9c9cff, #d19cff);
+    color: darkblue;
+}
+.accordion-button.genThree {
+    background: linear-gradient(to bottom right, rgb(255, 167, 255), rgb(255, 167, 183));
+    color: #33001E;
+}
+
 @media (max-width: 768px) {
     .accordion-body .gen-content {
         flex-direction: column;
@@ -43,23 +93,27 @@
 }
 
 .gen-images a {
-    flex: 1 1 150px;
-    /* ancho mínimo de 150px y se adapta al contenedor */
-    display: block;
+    flex: 1 1 120px;
+    margin-bottom: 0.5rem;
 }
 
 .gen-thumb {
     width: 100%;
-    /* la imagen ocupa todo el ancho del link */
-    height: 150px;
-    /* altura uniforme */
+    height: 120px;
     object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gen-thumb:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* recorta y centra la imagen si es necesario */
 
 .reglamento {
-    background: linear-gradient(to bottom right, #1a6eff, #9900ff, #ff60f4)
+    background: linear-gradient(to bottom right, #aeccff, #d699ff, #ffb4fa)
 }
 
 p {
@@ -70,6 +124,26 @@ li {
     font-size: 110%;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.4rem;
+}
+
+ul li input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+    accent-color: #ff5ea0; /* color moderno para checkboxes */
+}
+
+
+
+/* No quitar */
 .gallery-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     color: white;
@@ -121,4 +195,53 @@ li {
     line-height: 2rem;
     margin-right: 0.5rem;
     font-size: 1.2rem;
+}
+
+/* CHECKBOX */
+
+/* Ocultar el checkbox original */
+.reglamento-content input[type="checkbox"] {
+    display: none;
+}
+
+/* Crear un nuevo checkbox personalizado */
+.reglamento-content input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    line-height: 20px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Caja visible */
+.reglamento-content input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+
+/* Check cuando está marcado */
+.reglamento-content input[type="checkbox"]:checked + label::before {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+/* Marca de check */
+.reglamento-content input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    color: #fff;
+    font-size: 16px;
 }

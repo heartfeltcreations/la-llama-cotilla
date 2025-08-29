@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not So Normal | Retos</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="challenges.css">
     <link rel="stylesheet" href="../style.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
 </head>
 
@@ -86,8 +89,8 @@
                 <!-- Reglamento -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingReglamento">
-                        <button class="accordion-button bg-success text-white reglamento" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false"
+                        <button class="accordion-button reglamento" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseReglamento" aria-expanded="false"
                             aria-controls="collapseReglamento">
                             Reglamento
                         </button>
@@ -95,42 +98,47 @@
                     <div id="collapseReglamento" class="accordion-collapse collapse" aria-labelledby="headingReglamento"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>📌 Objetivo principal</h5> <br>
-                            <p>Completar un legado de varias generaciones donde cada sim heredero vive marcado por su
-                                infancia.</p> <br>
-                            <hr><br>
-                            <h5>📌 Reglas básicas</h5> <br>
-                            <ul>
-                                <li><strong>Duración de vida:</strong> Normal.</li> <br>
-                                <li><strong>Trucos:</strong></li>
-                                <ul>
-                                    <li>☺︎ Se permiten trucos mínimos de dinero. En este aspecto, estaría bien que tus
-                                        sims crezcan de manera
-                                        progresiva, en lugar de solo darles todo "en la mano". Es más realista y
-                                        entretenido.</li>
-                                    <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres
-                                        mayor realismo te recomiendo
-                                        que tus sims se independicen con el dinero que sus padres puedan darles, o con
-                                        el dinero que hayan estado juntando con sus
-                                        propias manos.</li>
-                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.
-                                    </li>
-                                </ul> <br>
-                                <li><strong>Mods y CC:</strong> Súper permitidos, y recomendados.</li> <br>
-                                <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es
-                                    el primero en nacer, pueden haber variaciones
-                                    en alguna que otra generación. Tú decide con cuánto puedes jugar.</li> <br>
-                                <li><strong>Colores:</strong> Cada generación tiene un color de referencia que debe
-                                    verse reflejado en el sim y/o en su entorno.
-                                    No necesariamente debes hacerlo abosultamente todo <span
-                                        style="background-color: #720000; color: white;">ROJO PASIÓN</span>, pero sí
-                                    debe estar bastante presente.</li>
-                            </ul> <br>
-                            <hr><br>
-                            <h5>📌 Finalizar una generación</h5> <br>
-                            <p>Para dar por finalizada una generación, el sim debería haber cumplido con todos los
-                                objetivos principales, completar su aspiración (al
-                                menos llegar a la última etapa), y cumplir con los objetivos de vida.</p>
+
+                            <!-- Objetivo Principal -->
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">
+                                    Objetivo Principal
+                                </div>
+                                <div class="reglamento-content">
+                                    Completar un legado de varias generaciones donde cada sim heredero vive marcado por
+                                    su infancia.
+                                </div>
+                            </div>
+
+                            <!-- Reglas Básicas -->
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">
+                                    Reglas Básicas
+                                </div>
+                                <div class="reglamento-content">
+                                    <ul>
+                                        <li><strong>Duración de vida:</strong> Normal.</li>
+                                        <li><strong>Trucos:</strong> Se permiten mínimos de dinero y algunos rasgos que
+                                            ayuden a avanzar en los objetivos.</li>
+                                        <li><strong>Mods y CC:</strong> Recomendados.</li>
+                                        <li><strong>Herederos:</strong> Preferiblemente uno por generación.</li>
+                                        <li><strong>Colores:</strong> Cada generación tiene un color de referencia que
+                                            debe verse reflejado en su entorno.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Finalizar Generación -->
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">
+                                    Finalizar Generación
+                                </div>
+                                <div class="reglamento-content">
+                                    Para dar por finalizada una generación, el sim debe haber completado objetivos
+                                    principales y de vida, y su aspiración al menos hasta la última etapa.
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -138,89 +146,133 @@
                 <!-- Generación 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen1">
-                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false"
-                            aria-controls="collapseGen1"
-                            style="background-color: #BBDF32 !important; color: darkgreen !important;">
+                        <button class="accordion-button collapsed genOne" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen1" aria-expanded="false" aria-controls="collapseGen1">
                             Generación 1
                         </button>
                     </h2>
-                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1"
+
+                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="Gen1"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                No vienes de una familia adinerada ni de un linaje importante. Siempre fuiste el "raro"
-                                del barrio, obsesionado con el espacio, los
-                                experimentos y lo que existe más allá de las estrellas. Te unes a la carrera científica
-                                en busca de reconocimiento, pero en el
-                                fondo lo que quieres es probar que no estamos solos en el universo. Tu obsesión con lo
-                                paranormal te lleva a descuidar las relaciones
-                                humanas "normales", hasta que tu destino cambia al cruzarte con... lo inesperado (ejem
-                                👽).
-                            </p>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    No vienes de una familia adinerada ni de un linaje importante. Siempre fuiste el
+                                    "raro"
+                                    del barrio, obsesionado con el espacio, los experimentos y lo que existe más allá de
+                                    las estrellas. Te unes a la carrera científica en busca de reconocimiento, pero en
+                                    el fondo lo que quieres es probar que no estamos solos en el universo. Tu obsesión
+                                    con lo paranormal te lleva a descuidar las relaciones humanas "normales", hasta que
+                                    tu destino cambia al cruzarte con... lo inesperado (ejem 👽).
+                                </div>
+                            </div>
 
-                            <ul><strong>Color:</strong>
-                                <li>Verde ácido</li>
-                            </ul>
-                            <ul><strong>DLC requeridos: </strong>
-                                <li>¡A trabajar!</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Genio</li>
-                                <li>Ambicioso</li>
-                                <li>Errático</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Cerebrito</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Científico</li>
-                            </ul>
-                            <ul><strong>Estudios:</strong>
-                                <li>Ninguno. Al ser la primera generación, empezarás como jóven adulto y sin
-                                    habilidades, lo que te dejará poco tiempo
-                                    para ir a la universidad y lograr algo significativo que te ayude en las ventajas de
-                                    tu carrera.</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Destreza manual</li>
-                                <li><input type="checkbox"> Ciencia espacial</li>
-                            </ul>
-                            <ul><strong>Colecciones:</strong>
-                                <li><input type="checkbox"> Elementos</li>
-                            </ul>
-                            <ul><strong>Estilos de vida:</strong>
-                                <li>Ninguno</li>
-                            </ul>
-                            <ul><strong>Rasgos de recompensa:</strong>
-                                <li><input type="checkbox"> Genio temporal: se obtiene por beber un suero de
-                                    inteligencia</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Comienzas tu vida en una especie de búnker en StrangerVille
-                                    u Oasis Springs, y a medida avanzas en tu
-                                    carrera se convierte en una auténtica guarida científica</li>
-                                <li><input type="checkbox"> Crear todos los inventos del creador de inventos</li>
-                                <li><input type="checkbox"> Eres demasiado raro para todos, y solo hablas de
-                                    alienígenas, así que no consigues pareja</li>
-                                <li><input type="checkbox"> Conoces un alienígena, e inmediatamente decides que lo harás
-                                    tu cónyugue</li>
-                                <li><input type="checkbox"> Visitar Sixam con el electrogenerador de agujeros de gusano
-                                    o el cohete</li>
-                                <li><input type="checkbox"> Tienes al menos un hijo con tu pareja alienígena</li>
-                            </ul>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Verde ácido</div>
+                            </div>
 
-                            <div class="gen-images d-flex flex-wrap gap-2">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">DLC Requeridos</div>
+                                <div class="reglamento-content">¡A trabajar!</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    Genio, Ambicioso, Errático
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion1"><label for="aspiracion1">Cerebrito</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo"><label for="trabajo">Científico</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estudios</div>
+                                <div class="reglamento-content">
+                                    Ninguno. Al ser la primera generación, empezarás como joven adulto y sin
+                                    habilidades, lo que te dejará poco tiempo para ir a la universidad y lograr algo
+                                    significativo que te ayude en las ventajas de tu carrera.
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill1"><label for="skill1">Destreza manual</label>
+                                    <input type="checkbox" id="skill1-2"><label for="skill1-2">Ciencia espacial</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Colecciones</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="coleccion1"><label for="coleccion1">Elementos</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estilos de vida</div>
+                                <div class="reglamento-content">
+                                    Ninguno
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom1"><label for="recom1">Genio temporal: se obtiene
+                                        por beber un suero de inteligencia</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob1"><label for="ob1">Comienzas tu vida en una especie de
+                                        búnker en StrangerVille
+                                        u Oasis Springs, y a medida avanzas en tu carrera se convierte en una auténtica
+                                        guarida científica</label><br>
+                                    <input type="checkbox" id="ob1-2"><label for="ob1-2">Crear todos los inventos del
+                                        creador de inventos</label><br>
+                                    <input type="checkbox" id="ob1-3"><label for="ob1-3">Eres demasiado raro para todos,
+                                        y solo hablas de
+                                        alienígenas, así que no consigues pareja</label><br>
+                                    <input type="checkbox" id="ob1-4"><label for="ob1-4">Conoces un alienígena, e
+                                        inmediatamente decides que lo harás
+                                        tu cónyuge</label><br>
+                                    <input type="checkbox" id="ob1-5"><label for="ob1-5">Visitar Sixam con el
+                                        electrogenerador de agujeros de gusano
+                                        o el cohete</label><br>
+                                    <input type="checkbox" id="ob1-6"><label for="ob1-6">Tienes al menos un hijo con tu
+                                        pareja alienígena</label>
+                                </div>
+                            </div>
+
+                            <!-- Galería -->
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
                                 <a href="../img/mentauno.png" class="glightbox" data-gallery="gen1">
                                     <img src="../img/mentauno.png" class="img-fluid rounded gen-thumb"
                                         alt="Generación 1">
                                 </a>
-                                <a href="../img/genunobunker.jpg" class="glightbox" data-gallery="gen1">
-                                    <img src="../img/genunobunker.jpg" class="img-fluid rounded gen-thumb" alt="Búnker">
+                                <a href="../img/TS4_x64 2025-08-08 00-10-11_557.png" class="glightbox"
+                                    data-gallery="gen1">
+                                    <img src="../img/TS4_x64 2025-08-08 00-10-11_557.png"
+                                        class="img-fluid rounded gen-thumb" alt="Búnker">
                                 </a>
                             </div>
-
 
                         </div>
                     </div>
@@ -229,172 +281,268 @@
                 <!-- Generación 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen2">
-                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false"
-                            aria-controls="collapseGen2"
-                            style="background-color: #000080 !important; color: #90D5FF !important;">
+                        <button class="accordion-button collapsed genTwo" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen2" aria-expanded="false" aria-controls="collapseGen2">
                             Generación 2
                         </button>
                     </h2>
-                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2"
+
+                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="Gen2"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Eres descendiente de un científico obsesivo y tienes sangre alienígena. Tu infancia
-                                estuvo marcada por el laboratorio, experimentos
-                                raros y un hogar donde se hablaba más de planetas que de cumpleaños. Esto te hizo crecer
-                                con un sentimiento de no encajar.
-                                Eres demasiado humano para los aliens, y demasiado alien para los humanos. De adulto, te
-                                obesionas con adaptarte y enconctrar un lugar
-                                en la sociedad, pero a tu manera.
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Azul marino</li>
-                            </ul>
-                            <ul><strong>DLC requeridos: </strong>
-                                <li>¡A trabajar!</li>
-                                <li>Días de universidad</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Perseverante</li>
-                                <li>Torpe</li>
-                                <li>Extrovertido</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Amigo del mundo</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Médico</li>
-                            </ul>
-                            <ul><strong>Estudios:</strong>
-                                <li><input type="checkbox"> Biología</li>
-                                <ul><strong>Habilidades</strong>
-                                    <li><input type="checkbox"> Carisma</li>
-                                </ul>
-                                <ul><strong>Colecciones:</strong>
-                                    <li><input type="checkbox"> Impresiones de microscopio</li>
-                                </ul>
-                                <ul><strong>Estilos de vida:</strong>
-                                    <li>Sociable: para adquirir o mantener este estilo de vida, deberías tener cuatro
-                                        amigos o más</li>
-                                </ul>
-                                <ul><strong>Rasgos de recompensa:</strong>
-                                    <li><input type="checkbox"> Siempre bienvenido</li>
-                                    <li><input type="checkbox"> Supersaludable: al alcanzar el nivel 8 de la profesión
-                                        Médica</li>
-                                </ul>
-                                <ul><strong>Objetivos de vida:</strong>
-                                    <li><input type="checkbox"> Oculta tanto como puedas tu naturaleza alienígena</li>
-                                    <li><input type="checkbox"> Ten un mejor amigo humano desde la niñez, será el único
-                                        que sepa la verdad</li>
-                                    <li><input type="checkbox"> Cásate con un sim humano</li>
-                                    <li><input type="checkbox"> Ten hijos, hasta que logres tener un descendiente humano
-                                    </li>
-                                </ul>
-
-                                <div class="gen-images d-flex flex-wrap gap-2">
-                                    <a href="../img/aliens.png" class="glightbox" data-gallery="gen2">
-                                        <img src="../img/aliens.png" class="img-fluid rounded gen-thumb"
-                                            alt="Generación 2">
-                                    </a>
-                                    <a href="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg"
-                                        class="glightbox" data-gallery="gen2">
-                                        <img src="../img/mundo-alien.jpg.a08f58b292418b156d878b71cd4d1d3c.jpg"
-                                            class="img-fluid rounded gen-thumb" alt="Sixam">
-                                    </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Eres descendiente de un científico obsesivo y tienes sangre alienígena. Tu infancia
+                                    estuvo marcada por el laboratorio, experimentos
+                                    raros y un hogar donde se hablaba más de planetas que de cumpleaños. Esto te hizo
+                                    crecer
+                                    con un sentimiento de no encajar.
+                                    Eres demasiado humano para los aliens, y demasiado alien para los humanos. De
+                                    adulto, te
+                                    obesionas con adaptarte y enconctrar un lugar
+                                    en la sociedad, pero a tu manera.
                                 </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Azul marino</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">DLC requeridos</div>
+                                <div class="reglamento-content">Días de universidad</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos2"><label for="rasgos2">Perseverante, Torpe y
+                                        Extrovertido</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion2"><label for="aspiracion2">Amigo del
+                                        mundo</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo2"><label for="trabajo2">Médico</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estudios</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="estudios2"><label for="estudios2">Biología</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill2-1"><label for="skill2-1">Carisma</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Colecciones</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="colecciones2"><label for="colecciones2">Impresiones de
+                                        microscopio</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estilos de vida</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="estilos2"><label for="estilos2">Sociable: para adquirir o
+                                        mantener este estilo de vida, deberías tener cuatro amigos o más</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom2-1"><label for="recom2-1">Siempre
+                                        bienvenido</label>
+                                    <input type="checkbox" id="recoom2-1"><label for="recom2-2">Supersaludable: al
+                                        alcanzar
+                                        el nivel 8 de la profesión Médica</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob2-1"><label for="ob2-1">Oculta tanto como puedas tu
+                                        naturaleza alienígena</label> <br>
+                                    <input type="checkbox" id="ob2-2"><label for="ob2-2">Ten un mejor amigo desde la
+                                        niñez,
+                                        será el único que sepa la verdad</label> <br>
+                                    <input type="checkbox" id="ob2-3"><label for="ob2-3">Cásate con un sim
+                                        humano</label> <br>
+                                    <input type="checkbox" id="ob2-4"><label for="ob2-4">Ten hijos, hasta que logres
+                                        tener
+                                        un descendiente humano</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/aliens.png" class="glightbox" data-gallery="gen2">
+                                    <img src="../img/aliens.png" class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/maxresdefault.jpg" class="glightbox" data-gallery="gen2">
+                                    <img src="../img/maxresdefault.jpg" class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
 
                         </div>
                     </div>
+
+
                 </div>
 
-                <!-- gen 3 -->
 
+                <!-- gen 3 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen3">
-                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false"
-                            aria-controls="collapseGen3"
-                            style="background-color: fuchsia !important; color: #33001E !important;">
+                        <button class="accordion-button collapsed genThree" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen3" aria-expanded="false" aria-controls="collapseGen3">
                             Generación 3
                         </button>
                     </h2>
-                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3"
+
+                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="Gen3"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Toda tu infancia estuvo marcada por la obsesión de tu familia con "parecer normales".
-                                Pero tu oidas las falsas apariencias.
-                                Te prometiste a ti mismo que nunca ocultarías quien eras, y que jamás bajarías la voz
-                                por complacer a nadie.
-                                Cuando creciste, e mudaste a un pequeño apartamento de San Myshuno. Encunetras tu lugar
-                                en la noche: karaokes, festivales, murales
-                                y luces neón. Pronto descubres tu pasión por el arte, llevándote a la fama. Te
-                                conviertes en una figura pública escandalosa, llena de
-                                romances y espectáculos.
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Fucsia</li>
-                            </ul>
-                            <ul><strong>DLC requeridos: </strong>
-                                <li>Urbanitas</li>
-                                <li>Rumbo a la fama</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Juergüista</li>
-                                <li>Romántico</li>
-                                <li>Anticompromniso</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Urbanitas nativo</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Artista musical</li>
-                            </ul>
-                            <ul><strong>Estudios:</strong>
-                                <li>Ninguno</li>
-                                <ul><strong>Habilidades</strong>
-                                    <li><input type="checkbox"> Canto</li>
-                                    <li><input type="checkbox"> Baile</li>
-                                </ul>
-                                <ul><strong>Colecciones:</strong>
-                                    <li><input type="checkbox"> Pósters de la ciudad</li>
-                                </ul>
-                                <ul><strong>Estilos de vida:</strong>
-                                    <li>Ninguno</li>
-                                </ul>
-                                <ul><strong>Rasgos de recompensa:</strong>
-                                    <li><input type="checkbox"> Alma nocturna</li>
-                                </ul>
-                                <ul><strong>Objetivos de vida:</strong>
-                                    <li><input type="checkbox"> Mudate a la ciudad apenas seas joven adulto</li>
-                                    <li><input type="checkbox"> Tener al menos tres relaciones fallidas</li>
-                                    <li><input type="checkbox"> Participa siempre de los festivales locales</li>
-                                    <li><input type="checkbox"> Llega al nievel de Fama Mundial</li>
-                                    <li><input type="checkbox"> Como famoso, vive creando escándalos</li>
-                                    <li><input type="checkbox"> Tener un hijo sin haber comenzado una relación formal
-                                    </li>
-                                </ul>
-
-                                <div class="gen-images d-flex flex-wrap gap-3">
-                                    <a href="../img/Urbanitas_1.PNG3.PNG.png" class="glightbox" data-gallery="gen3">
-                                        <img src="../img/Urbanitas_1.PNG3.PNG.png" class="img-fluid rounded gen-thumb"
-                                            alt="Generación 3">
-                                    </a>
-                                    <a href="../img/maxresdefault.jpg" class="glightbox" data-gallery="gen3">
-                                        <img src="../img/maxresdefault.jpg" class="img-fluid rounded gen-thumb"
-                                            alt="urbanitas">
-                                    </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Toda tu infancia estuvo marcada por la obsesión de tu familia con "parecer
+                                    normales".
+                                    Pero tu oidas las falsas apariencias.
+                                    Te prometiste a ti mismo que nunca ocultarías quien eras, y que jamás bajarías la
+                                    voz
+                                    por complacer a nadie.
+                                    Cuando creciste, e mudaste a un pequeño apartamento de San Myshuno. Encunetras tu
+                                    lugar
+                                    en la noche: karaokes, festivales, murales
+                                    y luces neón. Pronto descubres tu pasión por el arte, llevándote a la fama. Te
+                                    conviertes en una figura pública escandalosa, llena de
+                                    romances y espectáculos.
                                 </div>
+                            </div>
 
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Fucsia</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">DLC requeridos</div>
+                                <div class="reglamento-content">Urbanitas<br>Rumbo a la fama</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos3"><label for="rasgos3">Juergüista, Romántico y
+                                        Anticompromiso</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion3"><label for="aspiracion3">Urbanitas
+                                        nativo</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo3"><label for="trabajo3">Artista musical</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estudios</div>
+                                <div class="reglamento-content">
+                                    Ninguno
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill3"><label for="skill3">Canto</label>
+                                    <input type="checkbox" id="skill3-1"><label for="skill3-1">Baile</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Colecciones</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="colecciones3"><label for="colecciones3">Pósters de la
+                                        ciudad</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Estilos de vida</div>
+                                <div class="reglamento-content">
+                                    Ninguno
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom3"><label for="recom3">Alma nocturna</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob3"><label for="ob3">Mudate a la ciudad apenas seas
+                                        joven adulto</label> <br>
+                                    <input type="checkbox" id="ob3-1"><label for="ob3-1">Tener al menos tres relaciones
+                                        fallidas</label> <br>
+                                    <input type="checkbox" id="ob3-2"><label for="ob3-2">Participa siempre en los
+                                        festivales locales</label><br>
+                                    <input type="checkbox" id="ob3-3"><label for="ob3-3">Llega a la Fama
+                                        Mundial</label><br>
+                                    <input type="checkbox" id="ob3-4"><label for="ob3-4">Como famoso, vive creando
+                                        escándalos</label><br>
+                                    <input type="checkbox" id="ob3-5"><label for="ob3-5">Tener un hijo sin haber
+                                        comenzado una relación formal</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/Urbanitas_1.PNG3.PNG.png" class="glightbox" data-gallery="gen3">
+                                    <img src="../img/Urbanitas_1.PNG3.PNG.png" class="img-fluid rounded gen-thumb"
+                                        alt="">
+                                </a>
+                                <a href="../img/maxresdefault.jpg" class="glightbox" data-gallery="gen3">
+                                    <img src="../img/maxresdefault.jpg" class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- gen 4 
 
                                 <div class="accordion-item">
@@ -455,8 +603,6 @@
                     </div>
                 </div>-->
 
-
-            </div>
         </section>
     </main>
 
@@ -481,6 +627,26 @@
             closeEffect: 'fade',     // efecto de cierre suave
             overlay: true,           // activa overlay en el fondo
             closeButton: true        // muestra la cruz para cerrar
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Guardar estado de cada checkbox
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            checkboxes.forEach(chk => {
+                // Cargar estado previo
+                const saved = localStorage.getItem(chk.dataset.id);
+                if (saved === 'true') chk.checked = true;
+
+                // Guardar al cambiar
+                chk.addEventListener('change', () => {
+                    localStorage.setItem(chk.dataset.id, chk.checked);
+                });
+            });
+
         });
     </script>
 
