@@ -2,97 +2,127 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>La Llama Cotilla | Retos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <div class="dev-modal" role="dialog" aria-modal="true">
-        <div class="dev-modal__content">
-            <h2>⚠️ Función en desarrollo</h2>
-            <p>Esta sección aún no está disponible.</p>
-            <a href="../index.html" class="dev-modal__back">⬅ Volver al inicio</a>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+    <div class="container-fluid">
+      <div class="row w-100 align-items-center">
+
+        <!-- Logo y título -->
+        <div class="col-3 d-flex align-items-center gap-2">
+          <img src="../img/llama_2911380.png" alt="llama" class="logo-llama">
+          <a class="navbar-brand fw-bold" href="../index.html">La Llama Cotilla</a>
         </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="col-5">
+          <div class="search-container w-100">
+            <input class="searchBar w-100" type="search" placeholder="Buscar retos...">
+            <span><img class="searchScan" src="../img/scan_6338489.png" alt="icono buscar"></span>
+          </div>
+        </div>
+
+        <!-- Usuario -->
+        <div class="col-4 text-end">
+          <a href="../perfil/perfil.html" class="d-inline-flex align-items-center gap-2 usuario">
+            <img src="../img/user_11129870.png" alt="usuario" class="usuario-img">
+            <span>Usuario<br><small class="text-muted">Estado</small></span>
+          </a>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <style>
-        .dev-modal {
-            background-color: rgba(17, 24, 39, 0.92);
-        }
+  <!-- Menú -->
+  <nav class="hero">
+    <a class="nav-link" href="../index.html">Inicio</a>
+    <a class="nav-link active" href="retos.html">Retos</a>
+    <a class="nav-link" href="../galeria/galeria.html">Galería</a>
+    <a class="nav-link" href="../comunidad/comunidad.html">Comunidad</a>
+    <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+  </nav>
 
-        :root {
-            --dev-bg: rgba(17, 24, 39, 0.92);
-            --dev-text: #f8fafc;
-            --dev-shadow: 0 10px 25px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .2);
-        }
+  <!-- Contenido -->
+  <main class="container my-5">
 
-        .dev-modal {
-            position: fixed;
-            inset: 0;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, .6);
-            backdrop-filter: blur(4px);
-        }
+    <!-- Categoría: Legado -->
+    <section class="mb-5">
+      <h3 class="mb-4">Legado</h3>
+      <div class="row g-3">
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <a href="notSoNormal.html">
+              <img src="../img/aliens.png" class="card-img-top" alt="Not So Normal">
+              <div class="card-body text-center">
+                <h6 class="mt-2">Not So Normal</h6>
+                <p class="mb-0"><strong>Dakota Brown</strong></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <a href="notSoBerryBase.html">
+              <img src="../img/mentauno.png" class="card-img-top" alt="Not So Berry">
+              <div class="card-body text-center">
+                <h6 class="mt-2">Not So Berry (Juego Base)</h6>
+                <p class="mb-0"><strong>Dakota Brown</strong></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        .dev-modal__content {
-            background: var(--dev-bg);
-            color: var(--dev-text);
-            padding: 2rem 2.5rem;
-            border-radius: 1rem;
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-            box-shadow: var(--dev-shadow);
-            animation: dev-pop .35s ease-out;
-        }
+    <!-- Categoría: CAS -->
+    <section class="mb-5">
+      <h3 class="mb-4">Crear un Sim</h3>
+      <div class="row g-3">
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <a href="#">
+              <img src="../img/sims-4-cas-background-ewylgp7rj9yocovv.jpg" class="card-img-top" alt="CAS Reto">
+              <div class="card-body text-center">
+                <h6 class="mt-2">Próximamente</h6>
+               <!-- <p class="mb-0"><strong>Autor</strong></p>-->
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        .dev-modal__content h2 {
-            margin: 0 0 1rem;
-            font: 600 1.4rem/1.3 system-ui, sans-serif;
-        }
+    <!-- Categoría: Construcción -->
+    <section class="mb-5">
+      <h3 class="mb-4">Construcción</h3>
+      <div class="row g-3">
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <a href="#">
+              <img src="../img/construccion.jpg" class="card-img-top" alt="Construcción Reto">
+              <div class="card-body text-center">
+                <h6 class="mt-2">Próximamente</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        .dev-modal__content p {
-            margin: 0 0 1.5rem;
-            font: 400 1rem/1.4 system-ui, sans-serif;
-        }
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 La Llama Cotilla | Creado por Heartfelt Creations</p>
+  </footer>
 
-        .dev-modal__back {
-            display: inline-block;
-            text-decoration: none;
-            background: linear-gradient(to bottom right, #1749ff, #aa00ff, #ff16c9);
-            color: #fff;
-            font: 600 1rem/1.2 system-ui, sans-serif;
-            padding: .65rem 1.2rem;
-            border-radius: .75rem;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
-            transition: transform .15s ease, background-color .15s ease;
-        }
-
-        .dev-modal__back:hover {
-            background: linear-gradient(to bottom right, #b8ffcd, #a6ffe1, #7efffb);
-            color: #333;
-        }
-
-        .dev-modal__back:active {
-            transform: scale(.96);
-        }
-
-        @keyframes dev-pop {
-            from {
-                transform: scale(.95);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

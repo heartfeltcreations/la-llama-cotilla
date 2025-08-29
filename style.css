@@ -1,20 +1,3 @@
-/* Responsive */
-@media (max-width: 768px) {
-    .search-container {
-        width: 100%;
-    }
-    .searchBar{
-        font-size: 13px;
-        padding: 6px 30px 6px 10px;
-    }
-    .usuario {
-        justify-content: center;
-    }
-    .lateral-bar {
-        margin-bottom: 1.5rem;
-    }
-}
-
 body {
     background-color: #f9f9f9;
     font-family: 'Istok Web', sans-serif;
@@ -150,7 +133,7 @@ body {
     background: linear-gradient(135deg, #f3e5f5, #e1bee7);
 }
 
-#details {
+.details {
     padding: 4%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
