@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,55 +10,71 @@
     <link rel="stylesheet" href="challenges.css">
     <link rel="stylesheet" href="../style.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
 </head>
+
 <body>
 
     <!-- Navbar -->
-  <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo y título -->
-      <div class="d-flex align-items-center gap-2">
-        <img src="../img/llama_2911380.png" alt="llama" class="logo-llama">
-        <a class="navbar-brand fw-bold" href="../index.html">La Llama Cotilla</a>
-      </div>
+    <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo y título -->
+            <div class="d-flex align-items-center gap-2">
+                <img src="../img/llama_2911380.png" alt="llama" class="logo-llama">
+                <a class="navbar-brand fw-bold" href="../index.html">La Llama Cotilla</a>
+            </div>
 
-      <!-- Barra de búsqueda -->
-      <div class="search-container">
-        <input class="searchBar" type="search" placeholder="Buscar">
-        <span><img class="searchScan" src="../img/scan_6338489.png" alt="icono buscar"></span>
-      </div> 
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input class="searchBar" type="search" placeholder="Buscar">
+                <span><img class="searchScan" src="../img/scan_6338489.png" alt="icono buscar"></span>
+            </div>
 
-      <!-- Usuario --><a href="../perfil/perfil.html">
-      <div class="usuario">
-        <img src="../img/user_11129870.png" alt="usuario" class="usuario-img">
-        <span>Usuario<br><small class="text-muted">Estado</small></span>
-      </div> </a>
-    </div>
-  </header>
+            <!-- Usuario --><a href="../perfil/perfil.html">
+                <div class="usuario">
+                    <img src="../img/user_11129870.png" alt="usuario" class="usuario-img">
+                    <span>Usuario<br><small class="text-muted">Estado</small></span>
+                </div>
+            </a>
+        </div>
+    </header>
 
-  <!-- Menú -->
-  <nav class="hero">
-    <a class="nav-link" href="../index.html">Inicio</a>
-    <a class="nav-link active" href="retos.html">Retos</a>
-    <a class="nav-link" href="../galeria/galeria.html">Galería</a>
-    <a class="nav-link" href="../comunidad/comunidad.html">Comunidad</a>
-    <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
-  </nav>
+    <!-- Menú -->
+    <nav class="hero">
+        <a class="nav-link" href="../index.html">Inicio</a>
+        <a class="nav-link active" href="retos.html">Retos</a>
+        <a class="nav-link" href="../galeria/galeria.html">Galería</a>
+        <a class="nav-link" href="../comunidad/comunidad.html">Comunidad</a>
+        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+    </nav>
 
     <!-- Intro -->
     <main class="container my-5">
-        <section style="text-align: center;" class="mb-5">
-            <h1>Not So Berry Base</h1> <br>
-            <p>
-                Bienvenido a mi adaptación de “Not so berry challenge” para los jugadores sin expansiones de nuestro amado juego 
-                Los Sims 4. Al final del documento les dejo una explicación escrita sobre los aspectos que pienso que algunos 
-                puedan necesitar ayuda, como en los mods. <br> El reto consiste en jugar con varias generaciones de sims. 
-                Cada una de ellas corresponde a un determinado color, el cual debe de predominar en los aspectos de cada sim, 
-                sus rasgos, y su hogar. A su vez, cada generación cumple con determinadas reglas, y metas. En total, son 10 generaciones.
-            </p>
-        </section>
+            <div class="gallery-header">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <span class="gallery-icon">🎮</span>
+                        <h1>Not So Berry - Juego Base</h1>
+                        <p>Bienvenido a mi adaptación de “Not so berry challenge” para los jugadores sin expansiones de
+                            nuestro amado juego
+                            Los Sims 4. Al final del documento les dejo una explicación escrita sobre los aspectos que
+                            pienso que algunos
+                            puedan necesitar ayuda, como en los mods. <br> El reto consiste en jugar con varias
+                            generaciones de sims.
+                            Cada una de ellas corresponde a un determinado color, el cual debe de predominar en los
+                            aspectos de cada sim,
+                            sus rasgos, y su hogar. A su vez, cada generación cumple con determinadas reglas, y metas.
+                            En total, son 10 generaciones.</p>
+                        <div class="gallery-badges">
+                            <span class="gallery-badge">Legado</span>
+                            <span class="gallery-badge">Colores</span>
+                            <span class="gallery-badge">Dakota Brown</span>
+                            <span class="gallery-badge">Adaptación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <!-- Accordion con Generaciones -->
         <section>
@@ -67,34 +84,50 @@
                 <!-- Reglamento -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingReglamento">
-                        <button class="accordion-button bg-success text-white reglamento" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false" aria-controls="collapseReglamento">
+                        <button class="accordion-button bg-success text-white reglamento" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseReglamento" aria-expanded="false"
+                            aria-controls="collapseReglamento">
                             Reglamento
                         </button>
                     </h2>
-                    <div id="collapseReglamento" class="accordion-collapse collapse" aria-labelledby="headingReglamento" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseReglamento" class="accordion-collapse collapse" aria-labelledby="headingReglamento"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>📌 Objetivo principal</h5> <br>
-                            <p>Completar un legado de varias generaciones donde cada sim heredero corresponde a un color.</p> <br><hr><br>
+                            <p>Completar un legado de varias generaciones donde cada sim heredero corresponde a un
+                                color.</p> <br>
+                            <hr><br>
                             <h5>📌 Reglas básicas</h5> <br>
                             <ul>
                                 <li><strong>Duración de vida:</strong> Normal.</li> <br>
                                 <li><strong>Trucos:</strong></li>
                                 <ul>
-                                    <li>☺︎ Se permiten trucos mínimos de dinero. En este aspecto, estaría bien que tus sims crezcan de manera
-                                        progresiva, en lugar de solo darles todo "en la mano". Es más realista y entretenido.</li>
-                                    <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres mayor realismo te recomiendo
-                                    que tus sims se independicen con el dinero que sus padres puedan darles, o con el dinero que hayan estado juntando con sus
-                                    propias manos.</li>
-                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.</li>
+                                    <li>☺︎ Se permiten trucos mínimos de dinero. En este aspecto, estaría bien que tus
+                                        sims crezcan de manera
+                                        progresiva, en lugar de solo darles todo "en la mano". Es más realista y
+                                        entretenido.</li>
+                                    <li>☺︎ Puedes usar freerealstate para mudar a tus sims pero, de nuevo, si quieres
+                                        mayor realismo te recomiendo
+                                        que tus sims se independicen con el dinero que sus padres puedan darles, o con
+                                        el dinero que hayan estado juntando con sus
+                                        propias manos.</li>
+                                    <li>☺︎ Puedes valerte de rasgos de solar que te ayuden a avanzar en los objetivos.
+                                    </li>
                                 </ul> <br>
                                 <li><strong>Mods y CC:</strong> Súper permitidos, y recomendados.</li> <br>
-                                <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es el primero en nacer, pueden haber variaciones
-                                en alguna que otra generación. Tú decide con cuánto puedes jugar.</li> <br>
-                                <li><strong>Colores:</strong> Cada generación tiene un color de referencia que debe verse reflejado en el sim y/o en su entorno. 
-                                No necesariamente debes hacerlo abosultamente todo <span style="background-color: #720000; color: white;">ROJO PASIÓN</span>, pero sí debe estar bastante presente.</li>
-                            </ul> <br><hr><br>
+                                <li><strong>Herederos:</strong> Aunque preferiblemente el sim heredero es sólo uno, y es
+                                    el primero en nacer, pueden haber variaciones
+                                    en alguna que otra generación. Tú decide con cuánto puedes jugar.</li> <br>
+                                <li><strong>Colores:</strong> Cada generación tiene un color de referencia que debe
+                                    verse reflejado en el sim y/o en su entorno.
+                                    No necesariamente debes hacerlo abosultamente todo <span
+                                        style="background-color: #720000; color: white;">ROJO PASIÓN</span>, pero sí
+                                    debe estar bastante presente.</li>
+                            </ul> <br>
+                            <hr><br>
                             <h5>📌 Finalizar una generación</h5> <br>
-                            <p>Para dar por finalizada una generación, el sim debería haber cumplido con todos los objetivos principales, completar su aspiración (al
+                            <p>Para dar por finalizada una generación, el sim debería haber cumplido con todos los
+                                objetivos principales, completar su aspiración (al
                                 menos llegar a la última etapa), y cumplir con los objetivos de vida.</p>
                         </div>
                     </div>
@@ -103,21 +136,28 @@
                 <!-- Generación 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen1">
-                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false" aria-controls="collapseGen1" style="color: darkgreen !important; background: linear-gradient(to bottom right, rgb(0, 255, 0), rgb(0, 211, 215));">
+                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false"
+                            aria-controls="collapseGen1"
+                            style="color: darkgreen !important; background: linear-gradient(to bottom right, rgb(0, 255, 0), rgb(0, 211, 215));">
                             Generación 1
                         </button>
                     </h2>
-                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Eres una persona que siempre tuvo un buen ojo para la moda, así que decides convertirte en el influencer más 
-                                destacado de esta categoría. También eres una persona carismática y divertida, que le gusta gastar bromas 
-                                a la gente, y reunirte con amigos. A medida que cumplías tu sueño tuviste dos hijos, y ahora eres junto 
+                                Eres una persona que siempre tuvo un buen ojo para la moda, así que decides convertirte
+                                en el influencer más
+                                destacado de esta categoría. También eres una persona carismática y divertida, que le
+                                gusta gastar bromas
+                                a la gente, y reunirte con amigos. A medida que cumplías tu sueño tuviste dos hijos, y
+                                ahora eres junto
                                 a tu cónyuge el mejor padre que tus hijos puedan desear.
                             </p>
 
-                            <ul><strong>Color:</strong> 
+                            <ul><strong>Color:</strong>
                                 <li>Menta</li>
                             </ul>
                             <ul><strong>Rasgos:</strong>
@@ -125,7 +165,7 @@
                                 <li>Celoso</li>
                                 <li>Fan del aire libre</li>
                             </ul>
-                            <ul><strong>Aspiración:</strong> 
+                            <ul><strong>Aspiración:</strong>
                                 <li><input type="checkbox"> Pillo prominente</li>
                             </ul>
                             <ul><strong>Trabajo:</strong>
@@ -136,9 +176,11 @@
                                 <li><input type="checkbox"> Carisma</li>
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Llegar al máximo de tu carrera y volverte Creador de tendencias</li>
+                                <li><input type="checkbox"> Llegar al máximo de tu carrera y volverte Creador de
+                                    tendencias</li>
                                 <li><input type="checkbox"> Completar la aspiración</li>
-                                <li><input type="checkbox"> Aprovechando tu trabajo, y ya que eres un pillo, arruina el aspecto de 5 sims (puedes hacerlo con la opción “Ofrecer cambio de imagen a” 
+                                <li><input type="checkbox"> Aprovechando tu trabajo, y ya que eres un pillo, arruina el
+                                    aspecto de 5 sims (puedes hacerlo con la opción “Ofrecer cambio de imagen a”
                                     en la categoría de acción “Amistosa” sobre otro sim random).</li>
                                 <li><input type="checkbox"> Tener dos hijos y conseguir una buena amistad con ellos</li>
                             </ul>
@@ -151,7 +193,8 @@
                                     <img src="../img/natalyeportman.png" class="img-fluid rounded gen-thumb" alt="">
                                 </a>
                                 <a href="../img/pilloprominenteCompleto.png" class="glightbox" data-gallery="gen1">
-                                    <img src="../img/pilloprominenteCompleto.png" class="img-fluid rounded gen-thumb" alt="">
+                                    <img src="../img/pilloprominenteCompleto.png" class="img-fluid rounded gen-thumb"
+                                        alt="">
                                 </a>
                                 <a href="../img/elementosCompleto.png" class="glightbox" data-gallery="gen1">
                                     <img src="../img/elementosCompleto.png" class="img-fluid rounded gen-thumb" alt="">
@@ -166,34 +209,44 @@
                 <!-- Generación 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen2">
-                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false" aria-controls="collapseGen2" style="background: linear-gradient(to bottom right, rgb(253, 118, 255), rgb(255, 19, 19)); color: darkred !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false"
+                            aria-controls="collapseGen2"
+                            style="background: linear-gradient(to bottom right, rgb(253, 118, 255), rgb(255, 19, 19)); color: darkred !important;">
                             Generación 2
                         </button>
                     </h2>
-                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Gracias al apoyo constante de tus padres, muy desde pequeño fuiste una persona erudita, volviéndote un sim estudioso, 
-                                y llegando así a querer enseñar, escribiendo libros informativos. Sin embargo, tu hermano es todo lo contrario, y gracias
-                                a que tus padres les daba todo a ambos, se volvió caprichoso, vago y despistado, pero como buen hermano mayor, y entregado 
-                                a la enseñanza, te preocupas por ayudarlo. Ahora eres escritor, padre, y te casaste con la persona incorrecta, alguien 
-                                que resultó ser un delincuente, y un agresivo, por lo que cuando tu hija es una niña, te separas de él encerrándote 
-                                completamente en tus libros, e ignorando a tu hija por completo, siendo cuidada casualmente por sus abuelos, quienes 
+                                Gracias al apoyo constante de tus padres, muy desde pequeño fuiste una persona erudita,
+                                volviéndote un sim estudioso,
+                                y llegando así a querer enseñar, escribiendo libros informativos. Sin embargo, tu
+                                hermano es todo lo contrario, y gracias
+                                a que tus padres les daba todo a ambos, se volvió caprichoso, vago y despistado, pero
+                                como buen hermano mayor, y entregado
+                                a la enseñanza, te preocupas por ayudarlo. Ahora eres escritor, padre, y te casaste con
+                                la persona incorrecta, alguien
+                                que resultó ser un delincuente, y un agresivo, por lo que cuando tu hija es una niña, te
+                                separas de él encerrándote
+                                completamente en tus libros, e ignorando a tu hija por completo, siendo cuidada
+                                casualmente por sus abuelos, quienes
                                 van a visitarte de vez en cuando.
                             </p>
 
                             <ul><strong>Color:</strong>
-                            <li>Rojo</li>
-                        </ul>
+                                <li>Rojo</li>
+                            </ul>
                             <ul><strong>Rasgos:</strong>
                                 <li>Genio</li>
                                 <li>Irascible</li>
                                 <li>Bibliófilo</li>
                             </ul>
                             <ul><strong>Aspiración:</strong>
-                            <li><input type="checkbox"> Sim del renacimiento</li>
-                        </ul>
+                                <li><input type="checkbox"> Sim del renacimiento</li>
+                            </ul>
                             <ul><strong>Trabajo:</strong>
                                 <li><input type="checkbox"> Profesor de clases particulares (adolescencia)</li>
                                 <li><input type="checkbox"> Escritor</li>
@@ -204,18 +257,24 @@
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
                                 <li><input type="checkbox"> Llega al máximo de tu carrera y sigue la rama de Autor</li>
-                                <li><input type="checkbox"> Con el rasgo de mentor, ayuda a tu hermano a mejorar en alguna habilidad</li>
-                                <li><input type="checkbox"> Cásate con un sim Criminal y mezquino (puedes crearlo tu mismo en otra unidad doméstica y forzar que se conozcan)</li>
-                                <li><input type="checkbox"> Tener una hija (debe ser niña), y divorciate cuando llegue a la niñez</li>
-                                <li><input type="checkbox"> Eras un gran padre, pero luego de separarte tus interacciones hacia tu hija son solo mezquinas, lo que arruinará su relación</li>
+                                <li><input type="checkbox"> Con el rasgo de mentor, ayuda a tu hermano a mejorar en
+                                    alguna habilidad</li>
+                                <li><input type="checkbox"> Cásate con un sim Criminal y mezquino (puedes crearlo tu
+                                    mismo en otra unidad doméstica y forzar que se conozcan)</li>
+                                <li><input type="checkbox"> Tener una hija (debe ser niña), y divorciate cuando llegue a
+                                    la niñez</li>
+                                <li><input type="checkbox"> Eras un gran padre, pero luego de separarte tus
+                                    interacciones hacia tu hija son solo mezquinas, lo que arruinará su relación</li>
                             </ul>
-                           
+
                             <div class="gen-images d-flex flex-wrap gap-2">
                                 <a href="../img/ericPortman.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/ericPortman.png" class="img-fluid rounded gen-thumb" alt="Generación 2">
+                                    <img src="../img/ericPortman.png" class="img-fluid rounded gen-thumb"
+                                        alt="Generación 2">
                                 </a>
                                 <a href="../img/pinkGraduation.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/pinkGraduation.png" class="img-fluid rounded gen-thumb" alt="Sixam">
+                                    <img src="../img/pinkGraduation.png" class="img-fluid rounded gen-thumb"
+                                        alt="Sixam">
                                 </a>
                                 <a href="../img/pinkHouse.png" class="glightbox" data-gallery="gen2">
                                     <img src="../img/pinkHouse.png" class="img-fluid rounded gen-thumb" alt="Sixam">
@@ -233,20 +292,30 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen3">
-                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false" aria-controls="collapseGen3" style="background: linear-gradient(to bottom right, yellow, rgb(170, 255, 0)); color: darkgoldenrod !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false"
+                            aria-controls="collapseGen3"
+                            style="background: linear-gradient(to bottom right, yellow, rgb(170, 255, 0)); color: darkgoldenrod !important;">
                             Generación 3
                         </button>
                     </h2>
-                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Debido a que sufriste el abandono de tus padres cuando apenas eras una niña, no sabes socializar, y solo te relacionas 
-                                con tus abuelos hasta que fallecen. No sabes lo que es el amor y la amistad, por tanto te aferras a los brazos 
-                                de cualquiera que se te acerque, y tu gran problema es que no tienes límites. Quedaste tan marcada por tu padre/madre criminal, 
-                                que sigues su camino. A medida pasan los años, vas entendiendo lo que el amor implica, luego de un centenar de caídas, más un 
-                                hijo accidentado (con el que tienes una terrible relación ya que no tuviste la guía de tus padres sobre cómo ser uno). Finalmente 
-                                en tus últimos años de vida te casas con la persona correcta, y te reconcilias con tu hijo, el que habías perdido cuando 
+                                Debido a que sufriste el abandono de tus padres cuando apenas eras una niña, no sabes
+                                socializar, y solo te relacionas
+                                con tus abuelos hasta que fallecen. No sabes lo que es el amor y la amistad, por tanto
+                                te aferras a los brazos
+                                de cualquiera que se te acerque, y tu gran problema es que no tienes límites. Quedaste
+                                tan marcada por tu padre/madre criminal,
+                                que sigues su camino. A medida pasan los años, vas entendiendo lo que el amor implica,
+                                luego de un centenar de caídas, más un
+                                hijo accidentado (con el que tienes una terrible relación ya que no tuviste la guía de
+                                tus padres sobre cómo ser uno). Finalmente
+                                en tus últimos años de vida te casas con la persona correcta, y te reconcilias con tu
+                                hijo, el que habías perdido cuando
                                 este fue adolescente.
                             </p>
 
@@ -270,19 +339,27 @@
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
                                 <li><input type="checkbox"> Alcanza la rama de Jefazo en tu carrera</li>
-                                <li><input type="checkbox"> Intenta casarte, pero luego cancela la boda (acción disponible mientras te casas)</li>
-                                <li><input type="checkbox"> Tener un hijo con un sim random que no conozcas, y nunca más vuelvas a verlo</li>
-                                <li><input type="checkbox"> Tener una mala relación con tu hijo, al que criarás sola</li>
+                                <li><input type="checkbox"> Intenta casarte, pero luego cancela la boda (acción
+                                    disponible mientras te casas)</li>
+                                <li><input type="checkbox"> Tener un hijo con un sim random que no conozcas, y nunca más
+                                    vuelvas a verlo</li>
+                                <li><input type="checkbox"> Tener una mala relación con tu hijo, al que criarás sola
+                                </li>
                                 <li><input type="checkbox"> Tu hijo se irá de casa cuando sea adolescente</li>
-                                <li><input type="checkbox"> Al llegar a la vejez, te casas y te reconcilias con tu hijo (llega a tener una mejor amistad con él)</li>
+                                <li><input type="checkbox"> Al llegar a la vejez, te casas y te reconcilias con tu hijo
+                                    (llega a tener una mejor amistad con él)</li>
                             </ul>
-                           
+
                             <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg" class="glightbox" data-gallery="gen3">
-                                    <img src="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg" class="img-fluid rounded gen-thumb" alt="Generación 3">
+                                <a href="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg"
+                                    class="glightbox" data-gallery="gen3">
+                                    <img src="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg"
+                                        class="img-fluid rounded gen-thumb" alt="Generación 3">
                                 </a>
-                                <a href="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1" class="glightbox" data-gallery="gen3">
-                                    <img src="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1" class="img-fluid rounded gen-thumb" alt="urbanitas">
+                                <a href="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1"
+                                    class="glightbox" data-gallery="gen3">
+                                    <img src="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1"
+                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
                                 </a>
                             </div>
 
@@ -294,17 +371,24 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen4">
-                        <button class="accordion-button collapsed bg-warning text-dark genFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen4" aria-expanded="false" aria-controls="collapseGen4" style="background: linear-gradient(to bottom right, rgb(186, 193, 201), #867e94); color: #333 !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genFour" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen4" aria-expanded="false"
+                            aria-controls="collapseGen4"
+                            style="background: linear-gradient(to bottom right, rgb(186, 193, 201), #867e94); color: #333 !important;">
                             Generación 4
                         </button>
                     </h2>
-                    <div id="collapseGen4" class="accordion-collapse collapse" aria-labelledby="headingGen4" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen4" class="accordion-collapse collapse" aria-labelledby="headingGen4"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Debido a la mala relación con tu madre decidiste irte de casa cuando eras apenas un adolescente, para comenzar una nueva 
-                                vida, con unos 1.000 simoleones en el bolsillo, en un campo sin dueño. Te resulta necesario hacer de todo para construir 
-                                un hogar con todas las cosas necesarias, pero sin tus estudios finalizados, no puedes llegar muy lejos, y te cuesta demasiado 
+                                Debido a la mala relación con tu madre decidiste irte de casa cuando eras apenas un
+                                adolescente, para comenzar una nueva
+                                vida, con unos 1.000 simoleones en el bolsillo, en un campo sin dueño. Te resulta
+                                necesario hacer de todo para construir
+                                un hogar con todas las cosas necesarias, pero sin tus estudios finalizados, no puedes
+                                llegar muy lejos, y te cuesta demasiado
                                 conseguir un trabajo estable.
                             </p>
 
@@ -332,18 +416,25 @@
                             </ul>
                             <ul><strong>Objetivos de vida:</strong>
                                 <li><input type="checkbox"> Cumplir solo con uno o dos hitos de cada aspiración</li>
-                                <li><input type="checkbox"> Irse de casa en la adolescencia con 1.000 simoleones en el bolsillo</li>
-                                <li><input type="checkbox"> Ser padre/madre adolescente (puedes habilitarlo con mods, sino, procura tener un hijo en la juventud)</li>
-                                <li><input type="checkbox"> Tus recursos nunca llegan a ser mayores a 5.000 simoleones</li>
+                                <li><input type="checkbox"> Irse de casa en la adolescencia con 1.000 simoleones en el
+                                    bolsillo</li>
+                                <li><input type="checkbox"> Ser padre/madre adolescente (puedes habilitarlo con mods,
+                                    sino, procura tener un hijo en la juventud)</li>
+                                <li><input type="checkbox"> Tus recursos nunca llegan a ser mayores a 5.000 simoleones
+                                </li>
                                 <li><input type="checkbox"> Tu casa no vale más de 20.000 simoleones</li>
                             </ul>
-                           
+
                             <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw" class="glightbox" data-gallery="gen4">
-                                    <img src="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw" class="img-fluid rounded gen-thumb" alt="Generación 4">
+                                <a href="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw"
+                                    class="glightbox" data-gallery="gen4">
+                                    <img src="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw"
+                                        class="img-fluid rounded gen-thumb" alt="Generación 4">
                                 </a>
-                                <a href="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98" class="glightbox" data-gallery="gen4">
-                                    <img src="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98" class="img-fluid rounded gen-thumb" alt="urbanitas">
+                                <a href="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98"
+                                    class="glightbox" data-gallery="gen4">
+                                    <img src="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98"
+                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
                                 </a>
                             </div>
 
@@ -355,19 +446,28 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen5">
-                        <button class="accordion-button collapsed bg-warning text-dark genFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGen5" aria-expanded="false" aria-controls="collapseGen5" style="background: linear-gradient(to bottom right, #D29BFD, #ff00e1); color: darkmagenta !important;">
+                        <button class="accordion-button collapsed bg-warning text-dark genFive" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseGen5" aria-expanded="false"
+                            aria-controls="collapseGen5"
+                            style="background: linear-gradient(to bottom right, #D29BFD, #ff00e1); color: darkmagenta !important;">
                             Generación 5
                         </button>
                     </h2>
-                    <div id="collapseGen5" class="accordion-collapse collapse" aria-labelledby="headingGen5" data-bs-parent="#accordionGeneraciones">
+                    <div id="collapseGen5" class="accordion-collapse collapse" aria-labelledby="headingGen5"
+                        data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
                             <h5>Descripción</h5>
                             <p>
-                                Durante tu juventud no lo tuviste todo, pero si lo necesario que era comida, un techo, y mucho amor. Creciste con un p/madre 
-                                que variaba constantemente en las cosas que hacía a diario, y gracias a ello descubriste el amor por el arte, soñando con algún 
-                                día ser el artista más exitoso del mundo sim. Entre obras de arte y galerías, te encuentras con el amor de tu vida, con quien 
-                                tienes un hijo, pero lastimosamente, ocurre una confusión, y crees que te engañó (aunque realmente solo trataban de seducirlo, 
-                                sin que él hubiera respondido), así que te divorcias. Más tarde te encuentras con su supuesto amante, las cosas se aclaran, y 
+                                Durante tu juventud no lo tuviste todo, pero si lo necesario que era comida, un techo, y
+                                mucho amor. Creciste con un p/madre
+                                que variaba constantemente en las cosas que hacía a diario, y gracias a ello descubriste
+                                el amor por el arte, soñando con algún
+                                día ser el artista más exitoso del mundo sim. Entre obras de arte y galerías, te
+                                encuentras con el amor de tu vida, con quien
+                                tienes un hijo, pero lastimosamente, ocurre una confusión, y crees que te engañó (aunque
+                                realmente solo trataban de seducirlo,
+                                sin que él hubiera respondido), así que te divorcias. Más tarde te encuentras con su
+                                supuesto amante, las cosas se aclaran, y
                                 vuelves a casarte con tu amor.
 
                             </p>
@@ -401,15 +501,20 @@
                                 <li><input type="checkbox"> Crear al menos 5 obras maestras</li>
                                 <li><input type="checkbox"> Cásate y ten un hijo con ese sim</li>
                                 <li><input type="checkbox"> Mudarte al menos tres veces</li>
-                                <li><input type="checkbox"> Te divorcias, pero años después vuelves con el mismo sim y te vuelves a casar</li>
+                                <li><input type="checkbox"> Te divorcias, pero años después vuelves con el mismo sim y
+                                    te vuelves a casar</li>
                             </ul>
-                           
+
                             <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ" class="glightbox" data-gallery="gen5">
-                                    <img src="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ" class="img-fluid rounded gen-thumb" alt="Generación 5">
+                                <a href="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ"
+                                    class="glightbox" data-gallery="gen5">
+                                    <img src="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ"
+                                        class="img-fluid rounded gen-thumb" alt="Generación 5">
                                 </a>
-                                <a href="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg" class="glightbox" data-gallery="gen5">
-                                    <img src="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg" class="img-fluid rounded gen-thumb" alt="urbanitas">
+                                <a href="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg" class="glightbox"
+                                    data-gallery="gen5">
+                                    <img src="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg"
+                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
                                 </a>
                             </div>
 
@@ -436,15 +541,16 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-    const lightbox = GLightbox({
-        selector: '.glightbox',  // selecciona todas las imágenes con esta clase
-        openEffect: 'fade',      // efecto de apertura suave
-        closeEffect: 'fade',     // efecto de cierre suave
-        overlay: true,           // activa overlay en el fondo
-        closeButton: true        // muestra la cruz para cerrar
-    });
-</script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',  // selecciona todas las imágenes con esta clase
+            openEffect: 'fade',      // efecto de apertura suave
+            closeEffect: 'fade',     // efecto de cierre suave
+            overlay: true,           // activa overlay en el fondo
+            closeButton: true        // muestra la cruz para cerrar
+        });
+    </script>
 
 </body>
+
 </html>

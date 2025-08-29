@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Llama Cotilla | Galería</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+ 
+    <header class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+
+                <!-- Logo y título -->
+                <div class="col-3 d-flex align-items-center gap-2">
+                    <img src="../img/llama_2911380.png" alt="llama" class="logo-llama">
+                    <a class="navbar-brand fw-bold" href="../index.html">La Llama Cotilla</a>
+                </div>
+
+                <!-- Barra de búsqueda -->
+                <div class="col-5">
+                    <div class="search-container w-100">
+                        <input class="searchBar w-100" type="search" placeholder="Buscar">
+                        <span><img class="searchScan" src="../img/scan_6338489.png" alt="icono buscar"></span>
+                    </div>
+                </div>
+
+                <!-- Usuario -->
+                <div class="col-4 text-end">
+                    <a href="../perfil/perfil.html" class="d-inline-flex align-items-center gap-2 usuario">
+                        <img src="../img/user_11129870.png" alt="usuario" class="usuario-img">
+                        <span>Usuario<br><small class="text-muted">Estado</small></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="hero">
+        <a class="nav-link" href="../index.html">Inicio</a>
+        <a class="nav-link" href="../retos/retos.html">Retos</a>
+        <a class="nav-link active" href="../galeria/galeria.html">Galería</a>
+        <a class="nav-link" href="../comunidad/comunidad.html">Comunidad</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container-fluid px-4">
+        <!-- Header de la galería -->
+        <div class="gallery-header">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <span class="gallery-icon">🎮</span>
+                    <h1>Galería de Los Sims</h1>
+                    <p>Descubre increíbles creaciones, diseños de casas, personajes únicos y momentos épicos 
+                       del mundo de Los Sims. Inspiración infinita para tu próxima construcción.</p>
+                    <div class="gallery-badges">
+                        <span class="gallery-badge">Arquitectura</span>
+                        <span class="gallery-badge">Interiores</span>
+                        <span class="gallery-badge">Personajes</span>
+                        <span class="gallery-badge">Gaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtros de la galería -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="Arquitectura">Arquitectura</button>
+            <button class="filter-btn" data-filter="Interiores">Interiores</button>
+            <button class="filter-btn" data-filter="Personajes">Personajes</button>
+            <button class="filter-btn" data-filter="Gaming">Gaming</button>
+        </div>
+
+        <!-- Grid de la galería -->
+        <div class="masonry-grid" id="galleryGrid">
+            <!-- Las imágenes se cargarán aquí dinámicamente con JavaScript -->
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Cargando galería...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 La Llama Cotilla | Creado por Heartfelt Creations</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="galeria.js"></script>
+
+</body>
+</html>
