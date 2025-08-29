@@ -69,3 +69,56 @@ p {
 li {
     font-size: 110%;
 }
+
+.gallery-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: white;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.gallery-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.gallery-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.gallery-badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.gallery-badge {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    font-size: 0.875rem;
+    backdrop-filter: blur(10px);
+}
+
+.gallery-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
