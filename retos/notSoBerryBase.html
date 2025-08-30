@@ -51,34 +51,34 @@
 
     <!-- Intro -->
     <main class="container-fluid px-4"> <br>
-            <div class="gallery-header">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <span class="gallery-icon">🎮</span>
-                        <h1>Not So Berry - Juego Base</h1>
-                        <p>Bienvenido a mi adaptación de “Not so berry challenge” para los jugadores sin expansiones de
-                            nuestro amado juego
-                            Los Sims 4. Al final del documento les dejo una explicación escrita sobre los aspectos que
-                            pienso que algunos
-                            puedan necesitar ayuda, como en los mods. <br> El reto consiste en jugar con varias
-                            generaciones de sims.
-                            Cada una de ellas corresponde a un determinado color, el cual debe de predominar en los
-                            aspectos de cada sim,
-                            sus rasgos, y su hogar. A su vez, cada generación cumple con determinadas reglas, y metas.
-                            En total, son 10 generaciones.</p>
-                        <div class="gallery-badges">
-                            <span class="gallery-badge">Legado</span>
-                            <span class="gallery-badge">Colores</span>
-                            <span class="gallery-badge">Dakota Brown</span>
-                            <span class="gallery-badge">Adaptación</span>
-                        </div>
+        <div class="gallery-header">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <span class="gallery-icon">🎮</span>
+                    <h1>Not So Berry - Juego Base</h1>
+                    <p>Bienvenido a mi adaptación de “Not so berry challenge” para los jugadores sin expansiones de
+                        nuestro amado juego
+                        Los Sims 4. Al final del documento les dejo una explicación escrita sobre los aspectos que
+                        pienso que algunos
+                        puedan necesitar ayuda, como en los mods. <br> El reto consiste en jugar con varias
+                        generaciones de sims.
+                        Cada una de ellas corresponde a un determinado color, el cual debe de predominar en los
+                        aspectos de cada sim,
+                        sus rasgos, y su hogar. A su vez, cada generación cumple con determinadas reglas, y metas.
+                        En total, son 10 generaciones.</p>
+                    <div class="gallery-badges">
+                        <span class="gallery-badge">Legado</span>
+                        <span class="gallery-badge">Colores</span>
+                        <span class="gallery-badge">Dakota Brown</span>
+                        <span class="gallery-badge">Adaptación</span>
                     </div>
                 </div>
             </div>
+        </div>
 
         <!-- Accordion con Generaciones -->
         <section>
-            <h3 style="text-align: center;" class="mb-4">📖 Reglamento y Generaciones</h3>
+            <h3 style="text-align: center;" class="mb-4">Reglamento y Generaciones</h3>
             <div class="accordion" id="accordionGeneraciones">
 
                 <!-- Reglamento -->
@@ -136,72 +136,90 @@
                 <!-- Generación 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen1">
-                        <button class="accordion-button collapsed bg-primary text-white genOne" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen1" aria-expanded="false"
-                            aria-controls="collapseGen1"
-                            style="color: darkgreen !important; background: linear-gradient(to bottom right, rgb(0, 255, 0), rgb(0, 211, 215));">
+                        <button class="accordion-button collapsed genOne" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen1" aria-expanded="false" aria-controls="collapseGen1" style="background-color: rgb(103, 255, 189);">
                             Generación 1
                         </button>
                     </h2>
-                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="headingGen1"
+
+                    <div id="collapseGen1" class="accordion-collapse collapse" aria-labelledby="Gen1"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Eres una persona que siempre tuvo un buen ojo para la moda, así que decides convertirte
-                                en el influencer más
-                                destacado de esta categoría. También eres una persona carismática y divertida, que le
-                                gusta gastar bromas
-                                a la gente, y reunirte con amigos. A medida que cumplías tu sueño tuviste dos hijos, y
-                                ahora eres junto
-                                a tu cónyuge el mejor padre que tus hijos puedan desear.
-                            </p>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Eres una persona que siempre tuvo un buen ojo para la moda, así que decides
+                                    convertirte
+                                    en el influencer más destacado de esta categoría. También eres una persona
+                                    carismática y divertida, que le
+                                    gusta gastar bromas a la gente, y reunirte con amigos. A medida que cumplías tu
+                                    sueño tuviste dos hijos, y
+                                    ahora eres junto a tu cónyuge el mejor padre que tus hijos puedan desear.
+                                </div>
+                            </div>
 
-                            <ul><strong>Color:</strong>
-                                <li>Menta</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Materialisa</li>
-                                <li>Celoso</li>
-                                <li>Fan del aire libre</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Pillo prominente</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Influencer de estilo</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Pillería</li>
-                                <li><input type="checkbox"> Carisma</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Llegar al máximo de tu carrera y volverte Creador de
-                                    tendencias</li>
-                                <li><input type="checkbox"> Completar la aspiración</li>
-                                <li><input type="checkbox"> Aprovechando tu trabajo, y ya que eres un pillo, arruina el
-                                    aspecto de 5 sims (puedes hacerlo con la opción “Ofrecer cambio de imagen a”
-                                    en la categoría de acción “Amistosa” sobre otro sim random).</li>
-                                <li><input type="checkbox"> Tener dos hijos y conseguir una buena amistad con ellos</li>
-                            </ul>
 
-                            <div class="gen-images d-flex flex-wrap gap-2">
-                                <a href="../img/mariesylus.png" class="glightbox" data-gallery="gen1">
-                                    <img src="../img/mariesylus.png" class="img-fluid rounded gen-thumb" alt="">
-                                </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Menta</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos1" data-id="rasgos1"><label
+                                        for="rasgos1">Materialista, Celoso y Fan del aire libre</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion1" data-id="aspiracion1"><label
+                                        for="aspiracion1">Pillo prominente</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo1" data-id="trabajo1"><label
+                                        for="trabajo1">Influencer de Estilo</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill1" data-id="skill1"><label
+                                        for="skill1">Pillería</label>
+                                    <input type="checkbox" id="skill1-2" data-id="skill1-2"><label
+                                        for="skill1-2">Carisma</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob1" data-id="ob1"><label for="ob1">Llegar al máximo en
+                                        tu carrera y volverte Creador de Tendencias</label><br>
+                                    <input type="checkbox" id="ob1-2" data-id="ob1-2"><label for="ob1-2">Completar la
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob1-3" data-id="ob1-3"><label for="ob1-3">Ofrece un
+                                        cambio de imagen a cinco sims y arruina su aspecto</label><br>
+                                    <input type="checkbox" id="ob1-2" data-id="ob1-2"><label for="ob1-2">Tener dos hijos
+                                        y tener una buena amistad con ambos</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
                                 <a href="../img/natalyeportman.png" class="glightbox" data-gallery="gen1">
                                     <img src="../img/natalyeportman.png" class="img-fluid rounded gen-thumb" alt="">
-                                </a>
-                                <a href="../img/pilloprominenteCompleto.png" class="glightbox" data-gallery="gen1">
-                                    <img src="../img/pilloprominenteCompleto.png" class="img-fluid rounded gen-thumb"
-                                        alt="">
                                 </a>
                                 <a href="../img/elementosCompleto.png" class="glightbox" data-gallery="gen1">
                                     <img src="../img/elementosCompleto.png" class="img-fluid rounded gen-thumb" alt="">
                                 </a>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -209,319 +227,912 @@
                 <!-- Generación 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen2">
-                        <button class="accordion-button collapsed bg-warning text-dark genTwo" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen2" aria-expanded="false"
-                            aria-controls="collapseGen2"
-                            style="background: linear-gradient(to bottom right, rgb(253, 118, 255), rgb(255, 19, 19)); color: darkred !important;">
+                        <button  class="accordion-button collapsed genTwo" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen2" aria-expanded="false" aria-controls="collapseGen2" style="background-color: #ff9090;">
                             Generación 2
                         </button>
                     </h2>
-                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="headingGen2"
+
+                    <div id="collapseGen2" class="accordion-collapse collapse" aria-labelledby="Gen2"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Gracias al apoyo constante de tus padres, muy desde pequeño fuiste una persona erudita,
-                                volviéndote un sim estudioso,
-                                y llegando así a querer enseñar, escribiendo libros informativos. Sin embargo, tu
-                                hermano es todo lo contrario, y gracias
-                                a que tus padres les daba todo a ambos, se volvió caprichoso, vago y despistado, pero
-                                como buen hermano mayor, y entregado
-                                a la enseñanza, te preocupas por ayudarlo. Ahora eres escritor, padre, y te casaste con
-                                la persona incorrecta, alguien
-                                que resultó ser un delincuente, y un agresivo, por lo que cuando tu hija es una niña, te
-                                separas de él encerrándote
-                                completamente en tus libros, e ignorando a tu hija por completo, siendo cuidada
-                                casualmente por sus abuelos, quienes
-                                van a visitarte de vez en cuando.
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Rojo</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Genio</li>
-                                <li>Irascible</li>
-                                <li>Bibliófilo</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Sim del renacimiento</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Profesor de clases particulares (adolescencia)</li>
-                                <li><input type="checkbox"> Escritor</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Lógica</li>
-                                <li><input type="checkbox"> Escritura</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Llega al máximo de tu carrera y sigue la rama de Autor</li>
-                                <li><input type="checkbox"> Con el rasgo de mentor, ayuda a tu hermano a mejorar en
-                                    alguna habilidad</li>
-                                <li><input type="checkbox"> Cásate con un sim Criminal y mezquino (puedes crearlo tu
-                                    mismo en otra unidad doméstica y forzar que se conozcan)</li>
-                                <li><input type="checkbox"> Tener una hija (debe ser niña), y divorciate cuando llegue a
-                                    la niñez</li>
-                                <li><input type="checkbox"> Eras un gran padre, pero luego de separarte tus
-                                    interacciones hacia tu hija son solo mezquinas, lo que arruinará su relación</li>
-                            </ul>
-
-                            <div class="gen-images d-flex flex-wrap gap-2">
-                                <a href="../img/ericPortman.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/ericPortman.png" class="img-fluid rounded gen-thumb"
-                                        alt="Generación 2">
-                                </a>
-                                <a href="../img/pinkGraduation.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/pinkGraduation.png" class="img-fluid rounded gen-thumb"
-                                        alt="Sixam">
-                                </a>
-                                <a href="../img/pinkHouse.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/pinkHouse.png" class="img-fluid rounded gen-thumb" alt="Sixam">
-                                </a>
-                                <a href="../img/mentaAmarillo.png" class="glightbox" data-gallery="gen2">
-                                    <img src="../img/mentaAmarillo.png" class="img-fluid rounded gen-thumb" alt="Sixam">
-                                </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Gracias al apoyo constante de tus padres, muy desde pequeño fuiste una persona
+                                    erudita, volviéndote un sim estudioso, y llegando así a querer enseñar, escribiendo
+                                    libros informativos. Sin embargo, tu hermano es todo lo contrario, y gracias a que
+                                    tus padres les daba todo a ambos, se volvió caprichoso, vago y despistado, pero como
+                                    buen hermano mayor, y entregado a la enseñanza, te preocupas por ayudarlo.
+                                    Ahora eres escritor, padre, y te casaste con la persona incorrecta, alguien que
+                                    resultó ser un delincuente, y un agresivo, por lo que cuando tu hija es una niña, te
+                                    separas de él encerrándote completamente en tus libros, e ignorando a tu hija por
+                                    completo, siendo cuidada casualmente por su/s abuelo/s, quien/es va/n a visitarte de
+                                    vez en cuando.
+                                </div>
                             </div>
 
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Rojo</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos2" data-id="rasgos2"><label for="rasgos2">Genio,
+                                        Irascible y Biliófilo</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion2" data-id="aspiracion2"><label
+                                        for="aspiracion2">Sim del renacimiento</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo2" data-id="trabajo2"><label
+                                        for="trabajo2">Profesor de clases particulares (adolescencia)</label>
+                                    <input type="checkbox" id="trabajo2-1" data-id="trabajo2-1"><label
+                                        for="trabajo2-1">Escritor</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill2" data-id="skill2"><label
+                                        for="skill2">Escritura</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom2" data-id="recom2"><label
+                                        for="recom2">Mentor</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob2" data-id="ob2"><label for="ob2">Llega al máximo nivel
+                                        de u carrera y sigue como Autor</label><br>
+                                    <input type="checkbox" id="ob2-1" data-id="ob2-1"><label for="ob2-1">Completa tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob2-2" data-id="ob2-2"><label for="ob2-2">Con el rasgo de
+                                        mentor, ayuda a tu hermano a mejorar en alguna habilidad</label><br>
+                                    <input type="checkbox" id="ob2-3" data-id="ob2-3"><label for="ob2-3">Casarte con un
+                                        sim Criminal, de rasgos Mezquino</label>
+                                    <input type="checkbox" id="ob2-4" data-id="ob2-4"><label for="ob2-4">Tener una hija
+                                        y divorciarte cuando llegue a la niñez</label><br>
+                                    <input type="checkbox" id="ob2-5" data-id="ob2-5"><label for="ob2-5">Sé un buen
+                                        padre, pero cuando te separes ya no te relaciones con tu hija, y si lo haces,
+                                        que sea solo de manera mezquina</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen3">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen3">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Generación 3 -->
-
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen3">
-                        <button class="accordion-button collapsed bg-warning text-dark genThree" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen3" aria-expanded="false"
-                            aria-controls="collapseGen3"
-                            style="background: linear-gradient(to bottom right, yellow, rgb(170, 255, 0)); color: darkgoldenrod !important;">
+                        <button class="accordion-button collapsed genThree" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen3" aria-expanded="false" aria-controls="collapseGen3" style="background-color: #fcff97;">
                             Generación 3
                         </button>
                     </h2>
-                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="headingGen3"
+
+                    <div id="collapseGen3" class="accordion-collapse collapse" aria-labelledby="Gen3"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Debido a que sufriste el abandono de tus padres cuando apenas eras una niña, no sabes
-                                socializar, y solo te relacionas
-                                con tus abuelos hasta que fallecen. No sabes lo que es el amor y la amistad, por tanto
-                                te aferras a los brazos
-                                de cualquiera que se te acerque, y tu gran problema es que no tienes límites. Quedaste
-                                tan marcada por tu padre/madre criminal,
-                                que sigues su camino. A medida pasan los años, vas entendiendo lo que el amor implica,
-                                luego de un centenar de caídas, más un
-                                hijo accidentado (con el que tienes una terrible relación ya que no tuviste la guía de
-                                tus padres sobre cómo ser uno). Finalmente
-                                en tus últimos años de vida te casas con la persona correcta, y te reconcilias con tu
-                                hijo, el que habías perdido cuando
-                                este fue adolescente.
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Amarillo</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Torpe</li>
-                                <li>Ambiciosa</li>
-                                <li>Romántica</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Romántica total</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Criminal</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Comedia</li>
-                                <li><input type="checkbox"> Destreza manual</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Alcanza la rama de Jefazo en tu carrera</li>
-                                <li><input type="checkbox"> Intenta casarte, pero luego cancela la boda (acción
-                                    disponible mientras te casas)</li>
-                                <li><input type="checkbox"> Tener un hijo con un sim random que no conozcas, y nunca más
-                                    vuelvas a verlo</li>
-                                <li><input type="checkbox"> Tener una mala relación con tu hijo, al que criarás sola
-                                </li>
-                                <li><input type="checkbox"> Tu hijo se irá de casa cuando sea adolescente</li>
-                                <li><input type="checkbox"> Al llegar a la vejez, te casas y te reconcilias con tu hijo
-                                    (llega a tener una mejor amistad con él)</li>
-                            </ul>
-
-                            <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg"
-                                    class="glightbox" data-gallery="gen3">
-                                    <img src="https://athena.thesims.com/v2/images/0/0x00001ec7/A1E73541-6CF4-11EA-8821-F2ED66B80B86/00.jpg"
-                                        class="img-fluid rounded gen-thumb" alt="Generación 3">
-                                </a>
-                                <a href="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1"
-                                    class="glightbox" data-gallery="gen3">
-                                    <img src="https://i.redd.it/welcome-to-casa-amarilla-apartments-for-rent-needed-v0-96q4ixv8f2fd1.png?width=1920&format=png&auto=webp&s=1f2fdf831655d8ba0d6dfe94b39a5a0a623a92a1"
-                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
-                                </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Debido a que sufriste el abandono de tus padres cuando apenas eras una niña, no
+                                    sabes socializar, y solo te relacionas con tu/s abuelo/s hasta que fallece/n, y
+                                    tampoco sabes lo que es el amor y la amistad, por tanto te entregas a los brazos de
+                                    cualquiera que se te acerque con motivos de un romance, o de pasión de una noche, y
+                                    tu gran problema es que no tienes límites. Además, quedaste tan marcada por tu
+                                    p/madre criminal, que sigues su camino.
+                                    A medida pasan los años, vas entendiendo lo que el amor implica, luego de un
+                                    centenar de caídas, más un hijo accidentado (con el que tienes una terrible relación
+                                    ya que no tuviste la guía de tus padres sobre cómo ser uno), finalmente en tus
+                                    últimos años de vida te casas con la persona correcta, y te reconcilias con tu hijo,
+                                    el que habías perdido cuando este fue adolescente.
+                                </div>
                             </div>
 
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Amarillo</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos3" data-id="rasgos3"><label for="rasgos3">Torpe,
+                                        Ambiciosa y Romántica</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion3" data-id="aspiracion3"><label
+                                        for="aspiracion3">Romántica total</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo3" data-id="trabajo3"><label
+                                        for="trabajo3">Criminal</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill3" data-id="skill3"><label
+                                        for="skill3">Comedia</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom3" data-id="recom3"><label for="recom3">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob3" data-id="ob3"><label for="ob3">Llega al máxim nivel
+                                        de la carrera y sigue como Jefaza</label><br>
+                                    <input type="checkbox" id="ob3-1" data-id="ob3-1"><label for="ob3-1">Completa tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob3-2" data-id="ob3-2"><label for="ob3-2">Planea una boda
+                                        y cancélala cuando estén en el altar</label><br>
+                                    <input type="checkbox" id="ob3-3" data-id="ob3-3"><label for="ob3-3">Tener un hijo
+                                        con un sim random al que nunca volverás a ver y se una mala madre</label><br>
+                                    <input type="checkbox" id="ob3-4" data-id="ob3-4"><label for="ob3-4">Tu hijo se irá
+                                        de casa cuando sea adolescente</label><br>
+                                    <input type="checkbox" id="ob3-5" data-id="ob3-5"><label for="ob3-5">Cuando llegues
+                                        a la vejez cásate, y reconcíliate con tu hijo</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen3">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen3">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Generación 4 -->
-
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen4">
-                        <button class="accordion-button collapsed bg-warning text-dark genFour" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen4" aria-expanded="false"
-                            aria-controls="collapseGen4"
-                            style="background: linear-gradient(to bottom right, rgb(186, 193, 201), #867e94); color: #333 !important;">
+                        <button class="accordion-button collapsed genFour" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen4" aria-expanded="false" aria-controls="collapseGen4" style="background-color: #b0b0b0;">
                             Generación 4
                         </button>
                     </h2>
-                    <div id="collapseGen4" class="accordion-collapse collapse" aria-labelledby="headingGen4"
+
+                    <div id="collapseGen4" class="accordion-collapse collapse" aria-labelledby="Gen4"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Debido a la mala relación con tu madre decidiste irte de casa cuando eras apenas un
-                                adolescente, para comenzar una nueva
-                                vida, con unos 1.000 simoleones en el bolsillo, en un campo sin dueño. Te resulta
-                                necesario hacer de todo para construir
-                                un hogar con todas las cosas necesarias, pero sin tus estudios finalizados, no puedes
-                                llegar muy lejos, y te cuesta demasiado
-                                conseguir un trabajo estable.
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Gris</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Activo</li>
-                                <li>Melancólico</li>
-                                <li>Melómano</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Autor de best sellers</li>
-                                <li><input type="checkbox"> Botánico autónomo</li>
-                                <li><input type="checkbox"> As del anzuelo</li>
-                                <li><input type="checkbox"> Pintor extraordinario</li>
-                                <li><input type="checkbox"> Conservador</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Autónomo</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Jardinería</li>
-                                <li><input type="checkbox"> Pesca</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Cumplir solo con uno o dos hitos de cada aspiración</li>
-                                <li><input type="checkbox"> Irse de casa en la adolescencia con 1.000 simoleones en el
-                                    bolsillo</li>
-                                <li><input type="checkbox"> Ser padre/madre adolescente (puedes habilitarlo con mods,
-                                    sino, procura tener un hijo en la juventud)</li>
-                                <li><input type="checkbox"> Tus recursos nunca llegan a ser mayores a 5.000 simoleones
-                                </li>
-                                <li><input type="checkbox"> Tu casa no vale más de 20.000 simoleones</li>
-                            </ul>
-
-                            <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw"
-                                    class="glightbox" data-gallery="gen4">
-                                    <img src="https://i.ytimg.com/vi/vgQ4EuI4esE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBM3DP1ldHXGhLmqRRygmitXxbMKw"
-                                        class="img-fluid rounded gen-thumb" alt="Generación 4">
-                                </a>
-                                <a href="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98"
-                                    class="glightbox" data-gallery="gen4">
-                                    <img src="https://preview.redd.it/modern-family-mansion-i-built-this-nearly-all-gray-house-v0-tr3imgoe611b1.png?width=640&crop=smart&auto=webp&s=2913ae54f58bedfde1bec48ab4fdb3e8950f8c98"
-                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
-                                </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Debido a la mala relación con tu madre decidiste irte de casa cuando eras apenas un
+                                    adolescente, para comenzar una nueva vida, con unos 1.000 simoleones en el bolsillo,
+                                    en un campo sin dueño. Te resulta necesario hacer de todo, para construir un hogar
+                                    con todas las cosas necesarias, pero sin tus estudios finalizados, no puedes llegar
+                                    muy lejos, y te cuesta demasiado conseguir un trabajo estable.
+                                </div>
                             </div>
 
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Gris</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos4" data-id="rasgos4"><label for="rasgos4">Activo,
+                                        Melómano y Melancólico</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion4" data-id="aspiracion4"><label
+                                        for="aspiracion4">Autor de Best Sellers</label><br>
+                                    <input type="checkbox" id="aspiracion4-1" data-id="aspiracion4-1"><label
+                                        for="aspiracion4-1">Botánico autónomo</label><br>
+                                    <input type="checkbox" id="aspiracion4-2" data-id="aspiracion4-2"><label
+                                        for="aspiracion4-2">As del anzuelo</label><br>
+                                    <input type="checkbox" id="aspiracion4-3" data-id="aspiracion4-3"><label
+                                        for="aspiracion4-3">Pintor extraordinario</label><br>
+                                    <input type="checkbox" id="aspiracion4-4" data-id="aspiracion4-4"><label
+                                        for="aspiracion4-4">Conservador</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo4" data-id="trabajo4"><label
+                                        for="trabajo4">Autónomo</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill4" data-id="skill4"><label for="skill4">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom4" data-id="recom4"><label for="recom4">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob4" data-id="ob4"><label for="ob4">Irse de casa en la
+                                        adolescencia con $1.000</label><br>
+                                    <input type="checkbox" id="ob4-1" data-id="ob4-1"><label for="ob4-1">Cumplir al
+                                        menos un hito de cada aspiración</label><br>
+                                    <input type="checkbox" id="ob4-2" data-id="ob4-2"><label for="ob4-2">Ser padre/madre
+                                        adolescente (disponible con MCCommandCenter) y ser bueno como tal</label><br>
+                                    <input type="checkbox" id="ob4-3" data-id="ob4-3"><label for="ob4-3">Tus recursos
+                                        nunca pueden ser mayores $5.000</label><br>
+                                    <input type="checkbox" id="ob4-4" data-id="ob4-4"><label for="ob4-4">Tu casa no
+                                        puede valer más de $20.000</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen4">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen4">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Generación 5 -->
-
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="Gen5">
-                        <button class="accordion-button collapsed bg-warning text-dark genFive" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseGen5" aria-expanded="false"
-                            aria-controls="collapseGen5"
-                            style="background: linear-gradient(to bottom right, #D29BFD, #ff00e1); color: darkmagenta !important;">
+                        <button class="accordion-button collapsed genFive" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen5" aria-expanded="false" aria-controls="collapseGen5" style="background-color: #d8a4ff;">
                             Generación 5
                         </button>
                     </h2>
-                    <div id="collapseGen5" class="accordion-collapse collapse" aria-labelledby="headingGen5"
+
+                    <div id="collapseGen5" class="accordion-collapse collapse" aria-labelledby="Gen5"
                         data-bs-parent="#accordionGeneraciones">
                         <div class="accordion-body">
-                            <h5>Descripción</h5>
-                            <p>
-                                Durante tu juventud no lo tuviste todo, pero si lo necesario que era comida, un techo, y
-                                mucho amor. Creciste con un p/madre
-                                que variaba constantemente en las cosas que hacía a diario, y gracias a ello descubriste
-                                el amor por el arte, soñando con algún
-                                día ser el artista más exitoso del mundo sim. Entre obras de arte y galerías, te
-                                encuentras con el amor de tu vida, con quien
-                                tienes un hijo, pero lastimosamente, ocurre una confusión, y crees que te engañó (aunque
-                                realmente solo trataban de seducirlo,
-                                sin que él hubiera respondido), así que te divorcias. Más tarde te encuentras con su
-                                supuesto amante, las cosas se aclaran, y
-                                vuelves a casarte con tu amor.
-
-                            </p>
-
-                            <ul><strong>Color:</strong>
-                                <li>Violeta</li>
-                            </ul>
-                            <ul><strong>Rasgos:</strong>
-                                <li>Creativo</li>
-                                <li>Amante del arte</li>
-                                <li>Perfeccionista</li>
-                            </ul>
-                            <ul><strong>Aspiración:</strong>
-                                <li><input type="checkbox"> Pintor extraordinario</li>
-                            </ul>
-                            <ul><strong>Trabajo:</strong>
-                                <li><input type="checkbox"> Pintor</li>
-                            </ul>
-                            <ul><strong>Habilidades</strong>
-                                <li><input type="checkbox"> Pintura</li>
-                                <li><input type="checkbox"> Violín</li>
-                            </ul>
-                            <ul><strong>Colecciones:</strong>
-                                <li><input type="checkbox"> Ninguna</li>
-                            </ul>
-                            <ul><strong>Rasgos de recompensa:</strong>
-                                <li><input type="checkbox"> Ninguno</li>
-                            </ul>
-                            <ul><strong>Objetivos de vida:</strong>
-                                <li><input type="checkbox"> Alcanza la rama de Maestro del realismo en tu carrera</li>
-                                <li><input type="checkbox"> Crear al menos 5 obras maestras</li>
-                                <li><input type="checkbox"> Cásate y ten un hijo con ese sim</li>
-                                <li><input type="checkbox"> Mudarte al menos tres veces</li>
-                                <li><input type="checkbox"> Te divorcias, pero años después vuelves con el mismo sim y
-                                    te vuelves a casar</li>
-                            </ul>
-
-                            <div class="gen-images d-flex flex-wrap gap-3">
-                                <a href="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ"
-                                    class="glightbox" data-gallery="gen5">
-                                    <img src="https://i.ytimg.com/vi/Wixhu7QYF-o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLiXQEHsr0OBO6pn5UhcpbAR_OJQ"
-                                        class="img-fluid rounded gen-thumb" alt="Generación 5">
-                                </a>
-                                <a href="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg" class="glightbox"
-                                    data-gallery="gen5">
-                                    <img src="https://i.ytimg.com/vi/iDDWLXxRm4U/maxresdefault.jpg"
-                                        class="img-fluid rounded gen-thumb" alt="urbanitas">
-                                </a>
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Durante tu juventud no lo tuviste todo, pero si lo necesario que era comida, un
+                                    techo, y mucho amor. Creciste con un p/madre que variaba constantemente en las cosas
+                                    que hacía a diario, y gracias a ello descubriste el amor por el arte, soñando con
+                                    algún día ser el artista más exitoso del mundo sim.
+                                    Entre obras de arte y galerías, te encuentras con el amor de tu vida, con quien
+                                    tienes un hijo, pero lastimosamente, ocurre una confusión, y crees que te engañó,
+                                    aunque realmente solo trataban de seducirlo, sin que él hubiera respondido, así que
+                                    te divorcias. Más tarde te encuentras con tu supuesto cuerno, las cosas se aclaran,
+                                    y vuelves a casarte con tu amor.
+                                </div>
                             </div>
 
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Violeta</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos5" data-id="rasgos5"><label for="rasgos5">Creativo,
+                                        Amante del arte y Perfeccionista</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion5" data-id="aspiracion5"><label
+                                        for="aspiracion5">Pintor extraordinario</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo5" data-id="trabajo5"><label
+                                        for="trabajo5">Pintor</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill5" data-id="skill5"><label
+                                        for="skill5">Violín</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom5" data-id="recom5"><label for="recom5">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob5" data-id="ob5"><label for="ob5">Llegar al máximo
+                                        nivel de tu carrera y seguir como Maestro del realismo</label><br>
+                                    <input type="checkbox" id="ob5-1" data-id="ob5-1"><label for="ob5-1">Cumplir tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob5-2" data-id="ob5-2"><label for="ob5-2">Crear 5 obras
+                                        maestras</label><br>
+                                    <input type="checkbox" id="ob5-3" data-id="ob5-3"><label for="ob5-3">Tener un solo
+                                        hijo</label><br>
+                                    <input type="checkbox" id="ob5-4" data-id="ob5-4"><label for="ob5-4">Mudarte al
+                                        menos tres veces</label><br>
+                                    <input type="checkbox" id="ob5-5" data-id="ob5-5"><label for="ob5-5">Casarte con un
+                                        sim, divorciarte, y volver a casarte con el mismo</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen5">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen5">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Generación 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Gen6">
+                        <button class="accordion-button collapsed genSix" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen6" aria-expanded="false" aria-controls="collapseGen6" style="background-color: #ffcd90;">
+                            Generación 6
+                        </button>
+                    </h2>
+
+                    <div id="collapseGen6" class="accordion-collapse collapse" aria-labelledby="Gen6"
+                        data-bs-parent="#accordionGeneraciones">
+                        <div class="accordion-body">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Te criaste en un ambiente artístico, así que por razones familiares, también amas el
+                                    arte,pero tu preferencia no se basa en un lienzo, sino en las teclas del piano. Sin
+                                    embargo es un mundo que apenas vende, por lo que debes de ocuparte con un aburrido
+                                    empleo para poder vivir. En una fiesta de cumpleaños de un amigo conoces a un sim
+                                    que automáticamente se apodera de tu corazón. Te casas con él, y sueñan con formar
+                                    una familia, lastimosamente, tu no puedes tener hijos (puedes gestionar tu
+                                    fertilidad en el CAS), así que deciden adoptar a varios niños, uno tras otro a
+                                    medida pasa el tiempo, hasta llegar a 5 niños adoptados. Un día ocurre un milagro, y
+                                    logran tener un hijo biológico. Pero entonces deben mudarse porque ya no tienen
+                                    espacio en la casa.
+                                </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Naranja</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos6" data-id="rasgos6"><label
+                                        for="rasgos6">Gastrónomo, Malómano y Familiar</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion6" data-id="aspiracion6"><label
+                                        for="aspiracion6">Genio musical</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo6" data-id="trabajo6"><label for="trabajo6">Sim de
+                                        negocios</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill6" data-id="skill6"><label
+                                        for="skill6">Piano</label><br>
+                                    <input type="checkbox" id="skill6-1" data-id="skill6-1"><label
+                                        for="skill6-1">Cocina</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom6" data-id="recom6"><label for="recom6">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob6" data-id="ob6"><label for="ob6">Completa tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob6-1" data-id="ob6-1"><label for="ob6-1">Vivir en un
+                                        solar 20x15</label><br>
+                                    <input type="checkbox" id="ob6-2" data-id="ob6-2"><label
+                                        for="ob6-2">Casarte</label><br>
+                                    <input type="checkbox" id="ob6-3" data-id="ob6-3"><label for="ob6-3">Adopta un hijo
+                                        a la semana, hasta llegar a los 5 hijos</label><br>
+                                    <input type="checkbox" id="ob6-4" data-id="ob6-4"><label for="ob6-4">Cuando seas
+                                        adulto, lograrás tener un hijo biológico hombre</label><br>
+                                    <input type="checkbox" id="ob6-5" data-id="ob6-5"><label for="ob6-5">Múdate a un
+                                        solar 30x20</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen6">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen6">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generación 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Gen7">
+                        <button class="accordion-button collapsed genSeven" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen7" aria-expanded="false" aria-controls="collapseGen7" style="background-color: #c9a1a1;">
+                            Generación 7
+                        </button>
+                    </h2>
+
+                    <div id="collapseGen7" class="accordion-collapse collapse" aria-labelledby="Gen7"
+                        data-bs-parent="#accordionGeneraciones">
+                        <div class="accordion-body">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Siempre has sentido que eras diferente. Mientras tu familia estaba ocupada
+                                    trabajando en obras de arte y notas musicales tú solo querías estar fuera corriendo
+                                    sin rumbo. Eres muy bueno en los deportes y sueñas con convertirte en atleta
+                                    profesional. Aún así, te gusta tocar la guitarra. Debido a que tu juventud fue
+                                    desarrollada alrededor de muchos niños, les generaste un repudio a los niños en
+                                    general. Sin embargo, siendo joven, y viviendo de amoríos casuales, tuviste un
+                                    pequeño accidente, embarazando a una sim que apenas conocías, de lo cual solo te
+                                    enteras hasta años después, cuando ella muere, y sus padres te buscan para que te
+                                    hagas cargo de tu niña, quien es el calco de esa bella muchacha con la que estuviste
+                                    una vez.
+                                </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Marrón</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos7" data-id="rasgos7"><label for="rasgos7">Activo,
+                                        Coleguita y Niñofóbico</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion7" data-id="aspiracion7"><label
+                                        for="aspiracion7">Culturista</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo7" data-id="trabajo7"><label
+                                        for="trabajo7">Deportista</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill" 7 data-id="skill7"><label
+                                        for="skill7">Guitarra</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom7" data-id="recom7"><label for="recom7">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob7" data-id="ob7"><label for="ob7">Completa tu profesión
+                                        y sigue como Deportista profesional</label><br>
+                                    <input type="checkbox" id="ob7-1" data-id="ob7-1"><label for="ob7-1">Completa tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob7-2" data-id="ob7-2"><label for="ob7-2">Ten varios
+                                        amoríos y embaraza a una sim, pero no te relaciones nunca más con
+                                        ella</label><br>
+                                    <input type="checkbox" id="ob7-3" data-id="ob7-3"><label for="ob7-3">Cuando tu
+                                        descendiente esté en la niñez, su madre morirá y enotnces deberás quedarte con
+                                        él</label><br>
+                                    <input type="checkbox" id="ob7-4" data-id="ob7-4"><label for="ob7-4">No tengas
+                                        ninguna relación estable hasta la adultez</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen7">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen7">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generación 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Gen8">
+                        <button class="accordion-button collapsed genEight" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen8" aria-expanded="false" aria-controls="collapseGen8" style="background-color: #ff91e4;">
+                            Generación 8
+                        </button>
+                    </h2>
+
+                    <div id="collapseGen8" class="accordion-collapse collapse" aria-labelledby="Gen8"
+                        data-bs-parent="#accordionGeneraciones">
+                        <div class="accordion-body">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Tu sueño siempre fue la cocina gourmet, tu madre se dedicaba a ello, y ahora que
+                                    murió, quieres ejercer su trabajo en su nombre. Aprovechas las horas sola en casa
+                                    para practicar recetas, y cuando tu padre está, tratas de cuidarlo, ya que,
+                                    sinceramente, es un poco tonto, y su cabeza está solo en los deportes. A pesar de
+                                    que su fobia a los niños, le entiendes, así que lo amas igual, y a medida creces te
+                                    encargas de cuidarlo en sus comidas, la limpieza, etc. Pero no todo son
+                                    responsabilidades, cada fin de semana pueden disfrutar de una noche de películas
+                                    juntos.
+                                </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Rosado</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos8" data-id="rasgos8"><label for="rasgos8">Segura de
+                                        sí misma, Gastrónoma y Pulcra</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion8" data-id="aspiracion8"><label
+                                        for="aspiracion8">Chef maestra</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo8" data-id="trabajo8"><label
+                                        for="trabajo8">Trabajador culinario</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill8" data-id="skill8"><label for="skill8">Cocina
+                                        gourmet</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom8" data-id="recom8"><label for="recom8">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob8" data-id="ob8"><label for="ob8">Cuando tu padre no
+                                        está, estudias sobre cocina y peparas recetas de repostería</label><br>
+                                    <input type="checkbox" id="ob8-1" data-id="ob8-1"><label for="ob8-1">Tu padre solo
+                                        comerá cosas saludables, así que prepararás alimentos vegetarianos para él
+                                        (aunque él no lo sea)</label><br>
+                                    <input type="checkbox" id="ob8-2" data-id="ob8-2"><label for="ob8-2">Llega al máximo
+                                        nivel de tu trabajo y sigue la rama de Chef</label><br>
+                                    <input type="checkbox" id="ob8-3" data-id="ob8-3"><label for="ob8-3">Completa tu
+                                        aspiración</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen8">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen8">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generación 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Gen9">
+                        <button class="accordion-button collapsed genNine" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen9" aria-expanded="false" aria-controls="collapseGen9" style="background-color: #9cff8d;">
+                            Generación 9
+                        </button>
+                    </h2>
+
+                    <div id="collapseGen9" class="accordion-collapse collapse" aria-labelledby="Gen9"
+                        data-bs-parent="#accordionGeneraciones">
+                        <div class="accordion-body">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Una compañía de tecnología te pilló hackeando en sus sistemas y ahora trabajas para
+                                    ellos. ¿Conoces a Penélope García de Mentes Criminales? Esa eres tú. Te centras en
+                                    tu trabajo, pero eso no te impide salir de vez en cuando y pasártelo bien. Eres el
+                                    tipo de persona que estaría en una fiesta a las 3 de la mañana y llegaría al trabajo
+                                    a las 6.
+                                </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Verde</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos9" data-id="rasgos9"><label for="rasgos9">Friki,
+                                        Cleptómano y Extrovertido</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion9" data-id="aspiracion9"><label
+                                        for="aspiracion9">Experto en ordenadores</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo9" data-id="trabajo9"><label for="trabajo9">Gurú
+                                        tecnológico</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill9" data-id="skill9"><label
+                                        for="skill9">Videojuegos</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom9" data-id="recom9"><label for="recom9">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob9" data-id="ob9"><label for="ob9">...Completar tu
+                                        aspiración</label><br>
+                                    <input type="checkbox" id="ob9-1" data-id="ob9-1"><label for="ob9-1">Salir de fiesta
+                                        todos los fines de semana</label><br>
+                                    <input type="checkbox" id="ob9-2" data-id="ob9-2"><label for="ob9-2">Beber alcohol
+                                        de jueves a domingos</label><br>
+                                    <input type="checkbox" id="ob9-3" data-id="ob9-3"><label for="ob9-3">Haz muchos
+                                        Buenos amigos</label><br>
+                                    <input type="checkbox" id="ob9-4" data-id="ob9-4"><label for="ob9-4">No dejes tu
+                                        vida de parranda hasta que tengas pareja y al menos una hija</label>
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen9">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen9">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generación 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Gen10">
+                        <button class="accordion-button collapsed genTen" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGen10" aria-expanded="false" aria-controls="collapseGen10" style="background-color: #a2a5ff;">
+                            Generación 10
+                        </button>
+                    </h2>
+
+                    <div id="collapseGen10" class="accordion-collapse collapse" aria-labelledby="Gen10"
+                        data-bs-parent="#accordionGeneraciones">
+                        <div class="accordion-body">
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Descripción</div>
+                                <div class="reglamento-content">
+                                    Tienes una vida perfecta. Una pequeña casa, un esposo muy bueno... Sin embargo, tu
+                                    deseas más, y más, así que comienza a idealizar un plan para volverte rica. Optas
+                                    por deshacerte de tu marido,y comienzas a casarte con hombres viejos, teniendo hijos
+                                    con ellos, y luego separandote quedandote con los niños, para que durante la
+                                    separación de bienes te veas favorecida con la casa, mucho dinero, y una pensión.
+                                </div>
+                            </div>
+
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Color</div>
+                                <div class="reglamento-content">Azul</div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="rasgos10" data-id="rasgos10"><label for="rasgos10">Esnob, Anticompromiso y Romántica</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Aspiración</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="aspiracion10" data-id="aspiracion10"><label
+                                        for="aspiracion10">Fabulosamente rica</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Trabajo</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="trabajo10" data-id="trabajo10"><label for="trabajo10">Mantenida (Sin empleo)</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Habilidades</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="skill10" data-id="skill10"><label for="skill10">Coctelería</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Rasgos de recompensa</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="recom10" data-id="recom10"><label for="recom10">...</label>
+                                </div>
+                            </div>
+
+                            <div class="reglamento-block">
+                                <div class="reglamento-title">Objetivos</div>
+                                <div class="reglamento-content">
+                                    <input type="checkbox" id="ob10" data-id="ob10"><label for="ob10">Completa tu aspración</label><br>
+                                    <input type="checkbox" id="ob10-1" data-id="ob10-1"><label for="ob10-1">Ten 4 hijos</label><br>
+                                    <input type="checkbox" id="ob10-2" data-id="ob10-2"><label for="ob10-2">Nunca trabajes</label><br>
+                                    <input type="checkbox" id="ob10-3" data-id="ob10-3"><label for="ob10-3">Ten un hijo por cada casamiento, pero te quedarás solo con uno. Es decir, si de un matrimonio sale más de un hijo, pon en adopción a todos menos a uno</label><br>
+                                    <input type="checkbox" id="ob10-4" data-id="ob10-4"><label for="ob10-4">Engaña a tu pareja y luego divórciate</label><br>
+                                    <input type="checkbox" id="ob10-5" data-id="ob10-5"><label for="ob10-5">Por cada divorcio cederás $15.000</label>
+
+                                </div>
+                            </div>
+
+                            <div class="gen-images d-flex flex-wrap gap-2 mt-3">
+                                <a href="../img/..." class="glightbox" data-gallery="gen10">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                                <a href="../img/..." class="glightbox" data-gallery="gen10">
+                                    <img src="../img/..." class="img-fluid rounded gen-thumb" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------- Fin del reto ---------------------------->
 
             </div>
         </section>
@@ -532,22 +1143,37 @@
         <p>© 2025 La Llama Cotilla | Hecho por Heartfelt Creations</p>
     </footer>
 
+    <!-- Librerías externas -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Script único -->
     <script>
-        // Script básico para funcionalidad extra si deseas agregar dinámicas a futuro
         document.addEventListener('DOMContentLoaded', () => {
             console.log("Accordion de Not So Normal listo 🚀");
-        });
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-        const lightbox = GLightbox({
-            selector: '.glightbox',  // selecciona todas las imágenes con esta clase
-            openEffect: 'fade',      // efecto de apertura suave
-            closeEffect: 'fade',     // efecto de cierre suave
-            overlay: true,           // activa overlay en el fondo
-            closeButton: true        // muestra la cruz para cerrar
+            // Inicializar lightbox
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                openEffect: 'fade',
+                closeEffect: 'fade',
+                overlay: true,
+                closeButton: true
+            });
+
+            // Guardar estado de cada checkbox
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            checkboxes.forEach(chk => {
+                // Recuperar estado guardado
+                const saved = localStorage.getItem(chk.dataset.id);
+                if (saved === 'true') chk.checked = true;
+
+                // Guardar cambios en localStorage
+                chk.addEventListener('change', () => {
+                    localStorage.setItem(chk.dataset.id, chk.checked);
+                });
+            });
         });
     </script>
 

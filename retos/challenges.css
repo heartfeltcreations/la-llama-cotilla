@@ -68,18 +68,6 @@
     padding: 1.5rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.accordion-button.genOne {
-    background: linear-gradient(to bottom right, #edffa4, #abff8a);
-    color: darkgreen;
-}
-.accordion-button.genTwo {
-    background: linear-gradient(to bottom right, #9c9cff, #d19cff);
-    color: darkblue;
-}
-.accordion-button.genThree {
-    background: linear-gradient(to bottom right, rgb(255, 167, 255), rgb(255, 167, 183));
-    color: #33001E;
-}
 
 @media (max-width: 768px) {
     .accordion-body .gen-content {

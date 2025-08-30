@@ -188,14 +188,14 @@
                             <div class="reglamento-block">
                                 <div class="reglamento-title">Aspiración</div>
                                 <div class="reglamento-content">
-                                    <input type="checkbox" id="aspiracion1"><label for="aspiracion1">Cerebrito</label>
+                                    <input type="checkbox" id="aspiracion1" data-id="aspiracion1"><label for="aspiracion1">Cerebrito</label>
                                 </div>
                             </div>
 
                             <div class="reglamento-block">
                                 <div class="reglamento-title">Trabajo</div>
                                 <div class="reglamento-content">
-                                    <input type="checkbox" id="trabajo"><label for="trabajo">Científico</label>
+                                    <input type="checkbox" id="trabajo" data-id="trabajo"><label for="trabajo">Científico</label>
                                 </div>
                             </div>
 
@@ -611,44 +611,39 @@
         <p>© 2025 La Llama Cotilla | Hecho por Heartfelt Creations</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Script básico para funcionalidad extra si deseas agregar dinámicas a futuro
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log("Accordion de Not So Normal listo 🚀");
+<!-- Librerías externas -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- Script único -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Accordion de Not So Normal listo 🚀");
+
+    // Inicializar lightbox
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        overlay: true,
+        closeButton: true
+    });
+
+    // Guardar estado de cada checkbox
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach(chk => {
+        // Recuperar estado guardado
+        const saved = localStorage.getItem(chk.dataset.id);
+        if (saved === 'true') chk.checked = true;
+
+        // Guardar cambios en localStorage
+        chk.addEventListener('change', () => {
+            localStorage.setItem(chk.dataset.id, chk.checked);
         });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-        const lightbox = GLightbox({
-            selector: '.glightbox',  // selecciona todas las imágenes con esta clase
-            openEffect: 'fade',      // efecto de apertura suave
-            closeEffect: 'fade',     // efecto de cierre suave
-            overlay: true,           // activa overlay en el fondo
-            closeButton: true        // muestra la cruz para cerrar
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Guardar estado de cada checkbox
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-            checkboxes.forEach(chk => {
-                // Cargar estado previo
-                const saved = localStorage.getItem(chk.dataset.id);
-                if (saved === 'true') chk.checked = true;
-
-                // Guardar al cambiar
-                chk.addEventListener('change', () => {
-                    localStorage.setItem(chk.dataset.id, chk.checked);
-                });
-            });
-
-        });
-    </script>
+    });
+});
+</script>
 
 </body>
 
